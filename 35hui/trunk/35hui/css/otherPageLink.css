@@ -1,0 +1,57 @@
+ul.dibiaoPage
+{
+	font-size:11px;
+	border:0;
+	padding-top: 5px;
+        padding-bottom: 5px;
+	line-height:100%;
+	display:inline;
+}
+
+ul.dibiaoPage li
+{
+	display:inline;
+}
+
+ul.dibiaoPage a:link,
+ul.dibiaoPage a:visited
+{
+	border:solid 1px #9aafe5;
+	/*font-weight:bold;*/
+	color:#0e509e;
+	text-decoration:none;
+}
+
+ul.dibiaoPage .page a
+{
+	font-weight:normal;
+        
+}
+
+
+
+ul.dibiaoPage .selected a
+{
+	background:#FFFFFF;
+	color:#000000;
+}
+
+ul.dibiaoPage .hidden a
+{
+	border:solid 1px #DEDEDE;
+	color:#888888;
+}
+ul.dibiaoPage .next a,
+ul.dibiaoPage .previous a
+{
+	padding:1px;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.dibiaoPage .first,
+ul.dibiaoPage .last
+{
+	display:none;
+}

@@ -1,0 +1,32 @@
+/***********lou index****************/
+.pp_images { padding-left:7px;  FLOAT:left; overflow:hidden; }
+.qjss_bottom { WIDTH:263px; BACKGROUND:url("../images/bg.gif") no-repeat scroll 0 -644px transparent; height:13px; margin-bottom:5px;  }
+.searchTool .btnSearch input { background:url(../images/bg.gif) 0 -1760px no-repeat; display:block; text-decoration:none; height:31px; overflow:hidden; width:65px; cursor:pointer; border:none; }
+.xtlp_image { clear: left; display: inline; float: left; height: 90px; margin: 10px; _margin:5px 10px; width: 130px; }
+.gd { color: #0041D9; float: right; padding-top: 15px; width: 80px; }
+.qx_images { display: inline;float: left; height: 149px; margin-left: 15px; margin-top: 10px; padding-bottom: 25px; width: 241px;}
+.slider .current{background-color: #deecec; border-left:5px solid #04a8ae;}
+#zzhuoban{width:240px; padding-left:10px; padding-right:10px; clear:both;}
+#zzhuoban li{width:120px; text-align:center; float:left;}
+#zzhuoban il img{height:50px; margin-left:5px; margin-right:5px; width:110px;}
+.qjss{padding: 0 3px; position:relative;}
+.qx_images{margin-left: 10px;}
+.ss_wz{clear: both; display: block; _position: absolute; _left: 0; _top: -30px; color: black;}
+li.ss_wz span{ position: relative; left: 0; top: 0; _top:-300px;}
+.xtlp_xz{width:155px; overflow: hidden;}
+.xtlp_xzul li{height: 184px;}
+.partner{text-align: center;clear:both}
+.partner span{display: block;float: left;padding-left: 25px;width: 70px;}
+.partner ul{display: block;float: left;margin: 0px 0px 5px;padding: 0px;width: 860px;}
+.partner li{display: block;float: left;line-height: 1.6em;list-style-type: none;margin: 0px;padding: 0px;overflow: hidden;width: 85px;height: 20px}
+.partner li a{float: left;}
+.tag_zhu{background:url(../images/tag_type.gif) no-repeat scroll 0 -40px transparent; height: 16px;left: 85px; position: relative; width: 16px; margin-top: -16px;}
+.tag_sale {background: url("../images/tag_type.gif") no-repeat scroll 0 0 transparent; height: 16px; left: 85px; position: relative; margin-top: -16px; width: 16px;}
+
+
+.l_nav{ clear:both; height:37px; background:url(../images/sh_nav.gif) no-repeat; padding:0 10px; margin-top:5px;}
+.l_nav ul{ clear:both;}
+.l_nav ul li{ float:left; height:37px; margin-right:2px;}
+.l_nav ul li a{ padding:0 15px; line-height:37px; color:#FFFFFF; font-weight:bold; font-size:14px; text-decoration:none; display:block;}
+.l_nav ul li a:hover{  background:url(../images/sh_li.gif) repeat-x;}
+.l_nav ul li.clk{ background:url(../images/sh_li.gif) repeat-x;}

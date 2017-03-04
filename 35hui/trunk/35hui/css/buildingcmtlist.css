@@ -1,0 +1,12 @@
+.one-column-main{padding-top:20px;clear:both;}
+.one-column-main .feed_list li{border-bottom: 1px solid #E6E6E6;font-size: 12px;line-height: normal;padding-top:10px;padding-bottom:10px;}
+.feedtype_icon{background: url(http://pages.anjukestatic.com/img/comm/feedicon.gif) no-repeat;display: inline-block;float: left;font-size: 0px;height: 20px;line-height: 0;margin-right: 15px;width: 16px;}
+.feed_content{float:left;display: inline-block;word-break: break-all;word-wrap: break-word;}
+.one-column-main .feed_content{width: 480px;}
+.one-column-main .pubtime{float: right;font-size: 12px;margin:0;}
+.feed_list .pubtime{color: #999;font-size: 11px;margin: 5px 12px 0px 55px;}
+.one-column-main .pubtime em{font-size: 10px;font-style: normal;}
+.clear{clear: both;font-size: 0px;height: 0px;line-height: 0;}
+.one-column-main a:active{color: #0041D9;outline: none;text-decoration: none;}
+.one-column-main a:hover{color: #F60;outline: none;text-decoration: underline;}
+.one-column-main a{color: #0041D9;outline: none;text-decoration: none;}

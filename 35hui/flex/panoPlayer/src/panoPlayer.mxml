@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx"  applicationComplete="initPlayer()" xmlns:dibiao="dibiao.*" width="100%" height="100%">
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+		<s:Sequence id="moveRight"
+					target="{thumbnails}"
+					duration="500">
+			<s:Move xBy="-200"/>
+		</s:Sequence>
+		<s:Sequence id="moveLeft"
+					target="{thumbnails}"
+					duration="500">
+			<s:Move xBy="200"/>
+		</s:Sequence>
+		<s:Sequence id="moveUp"
+					target="{allButtom}"
+					duration="500">
+			<s:Move yBy="-75"/>
+		</s:Sequence>
+		<s:Sequence id="moveDown"
+					target="{allButtom}"
+					duration="500">
+			<s:Move yBy="75"/>
+		</s:Sequence>
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.core.BitmapAsset;
+			import mx.core.FlexGlobals;
+			import mx.events.FlexEvent;
+			
+			import pano.*;
+			
+			private var autoPlay:Boolean = true;//是否自动播放
+			private var panoDomain:String = "http://35upload.360dibiao.com/panorama";
+			private var backgroundImg:String = "";//不自动播放时显示的背景图片
+			private var mainXml:String="";//主xml
+			
+			private var thumbnailWidth:Number = 0;//所有缩略图连起来的宽度
+			private var player:PanoPlayer = null;
+			private var backgroundLoader:Loader;
+			
+			private var XMLLoader:URLLoader;
+			
+			private var bottomStage:Boolean = true;//底部是否显示
+			private var topMask:PlayingThumbnail;//当前选中的全景缩略图
+			
+			protected function initPlayer():void
+			{
+				if (FlexGlobals.topLevelApplication.parameters["backgroundImg"]!=null) {
+					this.backgroundImg = FlexGlobals.topLevelApplication.parameters["backgroundImg"];//不自动播放时显示的背景图片
+				}
+				if (FlexGlobals.topLevelApplication.parameters["autoPlay"]!=null&&(FlexGlobals.topLevelApplication.parameters["autoPlay"]=="false")){
+					this.autoPlay = false;
+				}
+				if (FlexGlobals.topLevelApplication.parameters["mainXml"]!=null){
+					this.mainXml = FlexGlobals.topLevelApplication.parameters["mainXml"];//主xml
+				}
+				if(this.autoPlay){//自动播放
+					playButton.visible = false;
+					beginPlayPano();
+				}else{//显示播放按钮
+					playButton.visible = true;
+					allButtom.visible = false;
+					if(this.backgroundImg!=""){//如果设置了背景，则要加载背景
+						var backgroundURLReq:URLRequest = new URLRequest(this.backgroundImg); 
+						backgroundLoader = new Loader();
+						backgroundLoader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, backgroundLoaderIoError);
+						backgroundLoader.load(backgroundURLReq);
+						playerCanvas.addChild(backgroundLoader);
+						backgroundLoader.contentLoaderInfo.addEventListener(Event.COMPLETE, reSizeBackgroundImg);
+						
+					}
+				}
+				ExternalInterface.addCallback("changePanoXml",reSetMainXml);
+				
+			}
+			public function reSetMainXml(xmlUrlString:String):void{
+				var event:Event;
+				stopAutoRotate(event);
+				//先清除显示的缩略图
+				while(thumbnailsbox.rawChildren.numChildren!=0){
+					thumbnailsbox.rawChildren.removeChildAt(0);
+				}
+				//加载xml文件
+				var XMLString:String = xmlUrlString;
+				var XMLUrl:URLRequest = new URLRequest(XMLString);
+				XMLLoader = new URLLoader(XMLUrl);
+				XMLLoader.addEventListener(IOErrorEvent.IO_ERROR, xmlLoaderIoError);
+				XMLLoader.addEventListener(Event.COMPLETE,filterPanoramastr);
+			}
+			protected function xmlLoaderIoError(event:Event):void{
+				trace("error");
+			}
+			protected function filterPanoramastr(event:Event):void{
+				XML.ignoreProcessingInstructions = false;//忽略处理指令
+				var mainXml:XML = new XML(XMLLoader.data);
+				
+				var xml:XML = XML(mainXml.child("panos"));
+				var i:Number = 0;
+				var oneWidth:Number = 100;//一个完整的缩略图站用的宽度
+				
+				var panoIdArray:Array = new Array();//所有的全景
+				var panoXArray:Array = new Array();//缩略图坐标
+				
+				for(var onePano:String in xml.pano){
+					var panoImage:PanoThumbnail = new PanoThumbnail(xml.pano[onePano].@panoId, xml.pano[onePano].@image,xml.pano[onePano].@title, changePano);
+					thumbnails.height = panoImage.height;
+					thumbnailsbox.rawChildren.addChildAt(panoImage, 0);
+					panoImage.x = i * oneWidth;
+					i += 1;
+					panoIdArray.push(xml.pano[onePano].@panoId);
+					panoXArray.push(panoImage.x);
+				}
+				this.thumbnailWidth = i*oneWidth;
+				controllerImg_right.visible=this.thumbnailWidth>this.width?true:false;
+				//当前播放的全景
+				topMask = new PlayingThumbnail();
+				thumbnailsbox.rawChildren.addChild(topMask);
+				//开始显示全景
+				var defaultPanoId:String = mainXml.child("default").child("panoId").toString();
+				this.panoDomain = mainXml.child("default").child("panoDomain").toString();
+				if(player==null){
+					player = new PanoPlayer(this.panoDomain,defaultPanoId, playerCanvas.width, playerCanvas.height);
+					playerCanvas.addChild(player);
+					//鼠标点击全景事件
+					player.addEventListener(MouseEvent.CLICK, stopAutoRotate);
+				}else{
+					player.clickToNextPanorama(defaultPanoId);
+				}
+				player.topMask = topMask;
+				player.panoIdArray = panoIdArray;
+				player.panoXArray = panoXArray;
+				
+			}
+			
+			/**
+			 * 控制全景方法
+			 */
+			public function changePano(changeToPanoId:String):void{
+				if(playerCanvas.numChildren == 2){//有背景的时候，要删除背景
+					playerCanvas.removeChildAt(0);
+				}
+				player.clickToNextPanorama(changeToPanoId);
+			}
+			/**
+			 * 开始显示全景
+			 */
+			private function beginPlayPano():void{
+				if(this.mainXml!=""){//只有设置了主xml。才能执行
+					allButtom.visible = true;
+					allButtom.y = stage.stageHeight-105;
+					
+					controller.addEventListener("ConPan",PanoController);
+					var XMLString:String = this.mainXml;
+					var XMLUrl:URLRequest = new URLRequest(XMLString);
+					XMLLoader = new URLLoader(XMLUrl);
+					XMLLoader.addEventListener(IOErrorEvent.IO_ERROR, xmlLoaderIoError);
+					XMLLoader.addEventListener(Event.COMPLETE,filterPanoramastr);
+					stage.addEventListener(FullScreenEvent.FULL_SCREEN, checkFullScreen);
+				}
+			}
+			/**
+			 * 加载完图片后重新设定大小
+			 */
+			private function reSizeBackgroundImg(event:Event):void{
+				var sc_x:Number = playerCanvas.width/event.target.width;
+				var sc_y:Number = playerCanvas.height/event.target.height;
+				var sc_main:Number = Math.max(sc_x, sc_y);
+				
+				var myMatrix:Matrix = backgroundLoader.transform.matrix;
+				myMatrix.scale(sc_main,sc_main);
+				backgroundLoader.transform.matrix=myMatrix;
+			}
+			/**
+			 * 点击播放全景
+			 */
+			private function playPano():void{
+				playButton.visible = false;
+				beginPlayPano();
+			}
+			private function PanoController(event:Event):void{
+				var controller:String = event.target.action.toString();
+				switch(controller){
+					case "left":{
+						player.rotatePano(10, 0, 0);
+						stopAutoRotate(null);
+						break;
+					}
+					case "right":{
+						player.rotatePano(-10, 0, 0);
+						stopAutoRotate(null);
+						break;
+					}
+					case "zoomIn":{
+						player.rotatePano(0, 0, -5);
+						stopAutoRotate(null);
+						break;
+					}
+					case "zoomOut":{
+						player.rotatePano(0, 0, 5);
+						stopAutoRotate(null);
+						break;
+					}
+					case "up":{
+						player.rotatePano(0, 5, 0);
+						stopAutoRotate(null);
+						break;
+					}
+					case "down":{
+						player.rotatePano(0, -5, 0);
+						stopAutoRotate(null);
+						break;
+					}
+					case "full":{
+						if(stage.displayState=="normal"){
+							stage.displayState = "fullScreen";
+						}else{
+							stage.displayState = "normal";
+						}
+						break;
+					}
+					case "hide":{
+						this.bottomStage = false;//底部是否显示
+						moveDown.play();
+						break;
+					}
+					case "show":{
+						this.bottomStage = true;//底部是否显示
+						moveUp.play();
+						break;
+					}
+					case "play":
+						player.autoRotate = true;
+						player.playOrStopPano();
+						break;
+					case "stop":
+						player.autoRotate = false;
+						player.playOrStopPano();
+						break;
+					default:{
+						break;
+					}
+				}
+				
+			}
+			private function checkFullScreen(event:Event):void{
+				allButtom.y = (this.bottomStage?0:75)+stage.stageHeight-105;
+				player.checkFullScreen(event);
+			}
+			private function backgroundLoaderIoError(event:Event):void{
+				backgroundLoader.unloadAndStop();
+			}
+			private function ThumbnailsToLeft():void{
+				if(!moveLeft.isPlaying){
+					var thumbnails_x:Number = thumbnails.x;
+					if(thumbnails_x<0){
+						moveLeft.play();
+						setControllerVisible(thumbnails_x+200);
+					}
+				}
+			}
+			private function ThumbnailsToRight():void{
+				if(!moveRight.isPlaying){
+					var thumbnails_x:Number = thumbnails.x;
+					if(thumbnails.x+this.thumbnailWidth>this.width){
+						moveRight.play();
+						setControllerVisible(thumbnails_x-200);
+					}
+				}
+			}
+			private function setControllerVisible(thumbnails_x:Number):void{
+				controllerImg_left.visible=thumbnails_x<0?true:false;
+				controllerImg_right.visible=thumbnails_x+this.thumbnailWidth>this.width?true:false;
+			}
+			private function stopAutoRotate(event:Event):void{
+				if(controller.playOrStop.currentFrame==1){
+					player.autoRotate = false;
+					player.playOrStopPano();
+					controller.playOrStop.gotoAndPlay(2);
+				}
+			}
+		]]>
+	</fx:Script>
+	<mx:Canvas width="100%" height="100%" verticalScrollPolicy="off" horizontalScrollPolicy="off">
+		<mx:SWFLoader width="100%" height="100%" id="playerCanvas"></mx:SWFLoader>
+		<mx:Image id="playButton" click="playPano()" mouseOut="playButton.alpha = 1" mouseOver="playButton.alpha = 0.7" source="@Embed(source='images/play.png')" horizontalCenter="0" verticalCenter="0" buttonMode="true"></mx:Image>
+		
+
+		<mx:Canvas id="allButtom"  verticalScrollPolicy="off" horizontalScrollPolicy="off" width="100%">
+			<dibiao:panoController right="0" bottom="75" id="controller"/>
+			<mx:Canvas id="panoThumbnails" width="100%" bottom="0" left="0" borderColor="#1D1C1C" cornerRadius="1" borderAlpha="0.01" backgroundColor="#0C0B0B" backgroundAlpha="0.3" borderVisible="false"  mouseOver="controllerImg.visible=true" mouseOut="controllerImg.visible=false">
+				<mx:Canvas verticalScrollPolicy="off" horizontalScrollPolicy="off" dropShadowVisible="false" width="100%" left="5">
+					<mx:Canvas id="thumbnails">
+						<mx:HBox id="thumbnailsbox"></mx:HBox>
+					</mx:Canvas>
+				</mx:Canvas>
+				
+				<mx:Canvas id="controllerImg" visible="false" width="100%" height="100%">
+					<mx:Canvas click="ThumbnailsToLeft()" id="controllerImg_left" left="0" top="0" buttonMode="true" width="30" height="100%" backgroundColor="#121010" backgroundAlpha="0.6" visible="false">
+						<mx:Image source="@Embed(source='images/left.png')"  top="10" ></mx:Image>
+					</mx:Canvas>
+					<mx:Canvas click="ThumbnailsToRight()" id="controllerImg_right" right="0" top="0" buttonMode="true" width="30" height="100%" backgroundColor="#121010" backgroundAlpha="0.6">
+						<mx:Image source="@Embed(source='images/right.png')" top="10" right="0"></mx:Image>
+					</mx:Canvas>
+				</mx:Canvas>
+			</mx:Canvas>
+		</mx:Canvas>
+	</mx:Canvas>
+	
+</s:Application>

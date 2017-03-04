@@ -1,0 +1,15 @@
+.partner{text-align: center;clear:both}
+.partner span{display: block;float: left;padding-left: 25px;width: 70px;}
+.partner ul{display: block;float: left;margin: 0px 0px 5px;padding: 0px;width: 860px;}
+.partner li{display: block;float: left;line-height: 1.6em;list-style-type: none;margin: 0px;padding: 0px;overflow: hidden;width: 85px;height: 20px}
+.partner li a{float: left;}
+.tag_zhu{background:url(../images/tag_type.gif) no-repeat scroll 0 -40px transparent; height: 16px; left: 85px; position: relative; margin-top: -16px; width: 16px;}
+.tag_sale { background: url("../images/tag_type.gif") no-repeat scroll 0 0 transparent; height: 16px; left: 85px; position: relative; margin-top: -16px; width: 16px; }
+
+
+.z_nav{ clear:both; height:37px; background:url(../images/zhai_nav.gif) no-repeat; padding:0 10px; margin-top:5px;}
+.z_nav ul{ clear:both;}
+.z_nav ul li{ float:left; height:37px; margin-right:2px;}
+.z_nav ul li a{ padding:0 15px; line-height:37px; color:#FFFFFF; font-weight:bold; font-size:14px; text-decoration:none; display:block;}
+.z_nav ul li a:hover{  background:url(../images/zhai_li.gif) repeat-x;}
+.z_nav ul li.clk{ background:url(../images/zhai_li.gif) repeat-x;}

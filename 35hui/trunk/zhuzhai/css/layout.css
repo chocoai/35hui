@@ -1,0 +1,4 @@
+body {width:100%;}
+.box{width:1003px; position:relative; background:#FFF; margin:0 auto;}
+.head{width:1003px; height:135px;}
+.banner{width:1003px; height:400px; position:relative; background:#FFF; float:left; width:100%;overflow:hidden; margin-bottom:4px; _margin-bottom:5px;}

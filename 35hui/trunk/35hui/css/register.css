@@ -1,0 +1,25 @@
+.reg-tit {border-bottom: 2px solid #D5CFC1;font-family: simsun;height: 68px;line-height: 24px;margin: 0px auto;padding: 0px 100px 0px 20px;position:relative; top:20px; width: 840px;}
+.reg-tit img{height: 60px;margin: -10px 0px 0px 20px; width: 80px;float:left;}
+.reg-tit img.nor-reg-pic {background-position: 0px -209px;}
+/*-------added by mingfang 10-11-30--------*/
+.register h2{font-size:18px;}
+.reg-tit {font-family: simsun;}
+.reg-tit h2.nor-reg-tit {float: left;height: 20px;width: 165px;top: 0px;border:0px solid red;color:#BE6322;margin-top:30px; }
+.reg-tit span{float: right;margin-top:30px;}
+.reg-tit em{color: red;float: left;font-style:normal;margin-top:30px;}
+.reg-form{margin: 20px auto 10px; width: 750px;}
+.reg-form li.field .input{float: left;width: 356px;}
+.reg-form li.field label{color: #333;float: left;font-weight: 700;padding-left: 15px;position: relative;width: 128px;}
+.reg-form li.field input, .login-form li.field input{border: 1px solid #A7A6AA;height: 16px;margin: 0px 5px;padding: 2px;width: 196px;display: inline;float: left;}
+.reg-form li.field label i{color: red;font-family: simsun;font-style: normal;font-weight: 400;left: 5px;position: absolute;top: 0px;}
+.reg-form li.field .msg{float: left;width: 344px;}
+.reg-form li.field{background: url(http://static.fangyou.com/www/images/reglog2/laber-bg.png) repeat-y 0px 0px;border-bottom: 1px solid #EDEDED;height: 36px;line-height: 1.5;padding: 12px 14px 0px;vertical-align: top;}
+.reg-form .agreements-field, .reg-form .submit-field{margin-top: 10px;}
+.reg-form .agreements-field .input, .reg-form .submit-field .input{margin-left: 25px;}
+.reg-form li.field .msg .attention{color: #666;display: block;}
+.reg-form li.code-field .input{width: 460px;}
+input[type="checkbox"]{margin: 3px 3px 3px 4px;}
+.reg-form li.field .msg p, .login-form li.field .msg p{display: none;}
+.msg .error{background-color: #FFF2F2;background-position: 3px 3px;border-color: #FF8080;}
+.msg .error, .msg .alert, .msg .attention, .msg .tips, .msg .ok{border: 0px solid #DDD;color: #404040;float: left;line-height: 18px;padding: 2px 10px 2px 23px;}
+

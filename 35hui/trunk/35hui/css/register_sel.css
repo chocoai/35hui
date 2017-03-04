@@ -1,0 +1,21 @@
+.register-wrap{   height: 580px;   position: relative;   width: 960px;   border:solid 0px blue;}
+.register-intro{   height: 318px;   position: absolute;   top: 80px;   width: 300px;   border:solid 0px red;}
+.register-des{   margin-top:55px;   border-bottom:1px solid #D5CFC1;   padding-bottom:5px;   font-size:26px;   color:#BE6322;}
+.register-title{   text-align:center;}
+.register-intro-n{   left: 0px;}
+.register-intro dd{   height: 170px;   left: 52px;   position: absolute;   top: 153px;}
+ol, ul{   list-style: none;}
+.register-wrap li{   background-position: -161px -105px;   font-size: 14px;   font-weight:normal;   line-height: 24px;   padding-left: 5px;   width:200px;}
+.register-wrap li em{   color: #9DB83F;   font-style:normal;}
+.entrance-box{   left: 24px;   position: absolute;   text-align: center;   top: 120px;}
+.register-intro-a{   left: 320px;   border-left:solid 1px #D5CFC1;}
+.register-intro-c{   left: 640px;   border-left:solid 1px #D5CFC1;}
+.reg-info-list{   color: #666;   font-weight: bold;   list-style-position: inside;   margin-top: 10px;   width: 300px;}
+.reg-info-list li{   list-style-image: url(../images/join_bullet.gif);   list-style-position: outside;   margin-left: 10px;   display: list-item;}
+.register-type{   color:#BE6322;   font-size:16px;   font-weight:bold;}
+a.btn-reglog:link{color:#BE6322; text-decoration:none; font-weight:bold; font-size:12px} 
+a.btn-reglog:visited{color:#BE6322; text-decoration:none; font-weight:bold; font-size:12px} 
+a.btn-reglog:hover{color:#ffffff; text-decoration:none;background:#BE6322; font-weight:bold;font-size:12px} 
+a.btn-reglog:active{color:#336699; text-decoration:underline; font-weight:bold; font-size:12px} 
+
+

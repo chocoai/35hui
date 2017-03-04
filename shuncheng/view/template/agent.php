@@ -1,0 +1,1 @@
+<p class="cent">I'am template 'agent'</p>

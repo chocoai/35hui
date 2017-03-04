@@ -1,0 +1,118 @@
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, label, table, tbody, tr, td, img, div, dl, dt, dd, pre, input, select, textarea, fieldset, iframe, hr{ margin:0; padding:0;}
+body{color:#333333; font-size:12px; line-height:normal; font-family:Arial, Helvetica, sans-serif; background:url(../images/bg.jpg) repeat-x;}
+ul{ list-style-type:none;}
+a{color:#22468B; text-decoration:none;}
+a:hover{text-decoration:underline;}
+em {font-style:normal;}
+table {border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+button{background:none; border:none; cursor:pointer;}
+ul{list-style-type:none;}
+ol{list-style-type:none;}
+*{margin:0px;padding:0px;}
+img{ border:0px;}
+.fixfloat{zoom:1}
+.red{ color:#ff2200;}
+.l{ float:left;}
+.r{ float:right;}
+.clear{ clear:both;}
+.indexpic{ background:url(../images/indexpic.png) no-repeat;}
+.listbg{ background:url(../images/listbg.png) no-repeat;}
+.iconlist{ background:url(../images/iconlist.png) no-repeat;}
+.sidebg{ background:url(../images/home_sidebg.png) no-repeat scroll 0 0 transparent;}
+.container{ width:1000px; margin:0 auto;}
+.header{ clear:both; height:144px; margin-bottom:10px;}
+.top{ clear:both; height:40px; text-align:right; line-height:40px; color:#FFFFFF; background:url(../images/logotop.png) no-repeat -18px 4px;}
+.top a{ padding:0 5px; color:#fff;}
+.logoline{ height:57px; clear:both; margin-bottom:15px; position: relative;}
+.logoline .logo{ float:left; width:155px;}
+.logoline .sty{ float:left; width:75px; padding-left: 5px; position: absolute; left: 160px; top: -5px; color: #fff;}
+.logoline .sty p{ height: 25px; line-height: 25px; color: #fff; background:url(../images/sty.png) no-repeat 31px 10px; margin-bottom: 5px;}
+.logoline .sty a{ height: 20px; line-height: 20px; color: #fff;}
+.logoline .step{ float:right; width:726px;}
+.nav{ clear:both; height:32px; padding-bottom:1px;}
+.nav ul{}
+.nav ul li.clk{ float:left; height:32px; background:url(../images/libg.jpg) right no-repeat; width:100px; text-align:center; position:relative;}
+.nav ul li.clk a:hover{ background:#2B5C7D; text-decoration: none}
+.clkhover{ background:#2B5C7D url(../images/navdw3.jpg) 80px 14px no-repeat; float:left; height:32px; width:100px; text-align:center; position:relative;}
+.clkhover a:hover{text-decoration: none; }
+.nav ul li.cll{ float:left; height:32px; background:#FFFFFF ; width:100px; text-align:center; position:relative;}
+.nav ul li.cll a{ line-height:32px; color:#22468B; font-size:14px; text-decoration:none; display:block; font-weight:bold;}
+.nav ul li a{ line-height:32px; color:#FFFFFF; font-size:14px; text-decoration:none; display:block;}
+
+.tnav{ position:absolute; z-index: 999; left:-1px;top:30px;background:#FFFFFF;border-bottom:1px solid #15305F;border-left:1px solid #15305F;border-right:1px solid #15305F; width:90px; padding:5px;}
+.nav ul li .tnav a{ font-size: 12px ;line-height:25px; padding-left:20px; text-align:left; background:url(../images/dotn.jpg) 5px 11px no-repeat; color:#22478E; font-weight:normal;}
+.nav ul li .tnav a:hover{background:#2B5C7D;color:white }
+
+.foot{ height:90px; padding:25px; clear:both; background:#083F66;  margin:0 auto;text-align:center; color:#fff; }
+.foot p{ clear:both; height:30px; line-height:30px; color:#FFFFFF; }
+.foot a{ line-height:30px; padding:0 10px; color:#FFFFFF;}
+
+/*************************input txt***********************************/
+.txt_1{ height:21px; padding:2px 0 2px 5px; border:1px solid #82A9CD; width:300px; line-height:21px; color:#808080; float:left;}
+.txt_2{ height:18px; padding:1px 0 1px 3px; border:1px solid #82A9CD; width:30px; line-height:18px; color:#808080; float:left; margin-right:5px;}
+.txt_3{ height:17px; padding:1px 0 1px 3px; border:1px solid #ccc; width:40px; line-height:17px; color:#808080; margin:0 5px; }
+.txt_4{ height:17px; padding:1px 0 1px 3px; border:1px solid #ccc; width:220px; line-height:17px; color:#808080; margin:0 5px;}
+.txt_5{ height:28px; padding:1px 0 1px 3px; font-size:14px; border-left:1px solid #A4ABB1; border-bottom:1px solid #A4ABB1; border-top:1px solid #A4ABB1; width:240px; line-height:28px; color:#808080; float:left; border-right:0;}
+.txt_s5{ height:28px; padding:1px 0 1px 3px; font-size:14px; border-left:1px solid #A4ABB1; border-bottom:1px solid #A4ABB1; border-top:1px solid #A4ABB1; width:300px; line-height:28px; color:#808080; float:left; border-right:0;}
+.txt_6{ height:17px; padding:1px 0 1px 3px; border:1px solid #ccc; width:60px; line-height:17px; color:#808080; margin:0 5px;}
+.txt_8{ height:17px; padding:1px 0 1px 3px; border:1px solid #ccc; width:200px; line-height:17px; }
+.txt_7{ height:17px; padding:1px 0 1px 3px; border:1px solid #ccc; width:160px; line-height:17px; color:#808080; margin:0 5px;}
+.tat{ width:202px; height:100px;}
+/************************input buttom***********************************/
+.btn_1{ background:url(../images/searbg.jpg) no-repeat; height:27px; width:100px; cursor:pointer; text-align:center; line-height:27px; color:#FFFFFF; font-size:14px; font-weight:bold; border:none; margin-left:10px;}
+.btn_2{ background:url(../images/search.jpg) no-repeat; height:32px; width:86px; cursor:pointer; line-height:32px; color:#FFFFFF; font-size:14px; font-weight:bold; border:none; float:left;}
+.btn_3{ background:url(../images/login.gif) no-repeat; height:28px; width:86px; cursor:pointer; line-height:28px; color:#FFFFFF; font-size:14px; font-weight:bold; border:none;}
+.btn_4{ background:url(../images/zc.gif) no-repeat; height:28px; width:86px; cursor:pointer; line-height:28px; color:#FFFFFF; font-size:14px; font-weight:bold; border:none;}
+/************************table style***********************************/
+.table_01{ width:100%;}
+.table_01 td {border:1px solid #E8E8E8; padding:5px 10px 4px 10px; text-align:center;}
+.table_01 td.tit{ line-height:21px; color:#333; font-weight:bold;}
+.table_01 td.titl{ line-height:21px; color:#333; font-weight:bold; padding-left:18px;}
+.table_01 td.txt{line-height:21px; color:#333; }
+.table_02{ width:100%;}
+.table_02 td { padding:3px 0;}
+.table_02 td em{ font-weight:bold; color:#ff6600; font-size:16px; font-family:Arial, Helvetica, sans-serif; padding-right:3px;}
+.table_02 td a{  background:url(../images/close1.jpg) no-repeat 0 2px;  padding-left:15px;}
+.smclk{width:50px; font-weight:normal; text-align:left;}
+.longclk{width:60px; font-weight:normal; text-align:left;}
+.table_03{ width:100%;}
+.table_03 td { padding:3px 0 3px 10px;border:1px solid #E8E8E8; line-height:25px;}
+.table_03 td.title{ font-weight:bold; border-top:1px solid #ccc; font-size:14px;}
+.table_03 td.tit{ background:#F7FBFE; padding-right:10px; text-align:right; font-weight:bold; color:#666666;}
+.table_03 td.txt{}
+.frmesg{ clear: both; height: 25px; padding: 5px  5px 2px  5px; text-align: center; line-height: 25px;color:#989898;}
+.friendly{ clear:both;  margin-bottom:10px; padding: 5px; border-top: 2px solid #104D6A;}
+.friendly em{ font-weight:bold; color:#808080; padding:0 6px; line-height:25px;}
+.friendly a{ color:#808080; padding:0 6px; line-height:25px;}
+.table_04{ width:100%;}
+.table_04 td{ padding:0 10px;}
+.table_05{ width:100%;}
+.table_05 td{ padding:5px; line-height:20px;}
+.table_06{ width:100%;}
+.table_06 td{ padding:2px 5px; line-height:20px;}
+.table_06 td.tit{ color:#0167CC;}
+
+.table_07{ width:100%;}
+.table_07 td{ padding:5px; line-height:25px;}
+.table_07 td.txt{}
+.table_07 td.txt input{vertical-align:middle; height:16px; width:16px;}
+.table_07 td.xdname{ color:#406D8A; font-weight:bold; font-size:14px;}
+.table_07 td.xdname select{ margin-right:10px;}
+
+.table_08{ width:100%;}
+.table_08 td{ padding:2px 1px; line-height:20px;}
+.table_09{ width:100%;}
+.table_09 td {border-left:1px solid #D6D6D6;border-right:1px solid #D6D6D6;border-bottom:1px solid #D6D6D6; padding:4px 0; color:#333; padding-left: 5px; background-color: #fff;}
+.table_09 td.tit{ line-height:21px;  font-weight:bold; color: #808080; text-align: right; padding-right: 5px; padding-left: 0;}
+.table_3{ width:100%;}
+.table_3 td { padding:3px 0 3px 10px;border:1px solid #F4D2D3; line-height:25px;}
+.table_3 td.title{ font-weight:bold; border-top:1px solid #ccc; font-size:14px;}
+.table_3 td.tit{ background:#F9E3E4; padding-right:10px; text-align:right; font-weight:bold; color:#666666;}
+.table_3 td.titt{ background:#F7FBFE; font-weight:bold; color:#666666; text-align:center;}
+.table_3 td.txt{}
+
+.ntab_01{ width:100%;}
+.ntab_01 td {border-bottom:1px solid #E8E8E8; padding:2px 5px 2px 5px; line-height:22px;}
+.ntab_01 td code{ color:#66656A; line-height:22px;}
+.ntab_01 td em{ color:#FF6501; line-height:22px;}

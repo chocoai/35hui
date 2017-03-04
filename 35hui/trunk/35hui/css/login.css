@@ -1,0 +1,29 @@
+.sign_in_header{color:#cb742e;}
+#signin{float: left;margin:10px 0 0 20px;width: 335px;display:inline;}
+ h1{font-size:24px; margin-top:3px; _margin-top:10px;}
+#join-call{border-left: 1px solid #D5CFC1;float: right;margin: 10px 10px 0px 0px;padding: 0px 0px 25px 20px;width: 355px;}
+#left-bar{float: left;min-height: 532px;width: 766px;}
+#left-bar.main_content{border: 1px solid #D4CFC2;padding: 3px;}
+#login-form{margin-top: 20px;}
+#login-form label{width: 75px;color:#666}
+.font_13{color:#666}
+.frm_div label{display: block;float: left;font-weight: bold;}
+.frm_div input, .frm_div select{margin-bottom: 15px;}
+.frm_div input[type="email"], .frm_div input[type="text"], input[type="password"]{width: 220px;}
+frm_div input, .frm_div select{margin-bottom: 15px;}
+.frm_div input[type="email"], .frm_div input[type="text"],.frm_div  input[type="password"]{border: 1px solid #D4CFC2;color: #333;font-size: 14px;height: 16px;padding: 3px 2px 3px 5px;}
+.validation-advice{color: #900;margin-bottom: 5px;}
+.login_chbox{margin-left: 75px;}
+.cnbox{clear: left;margin: 0px 0px 18px 125px;}
+.chbox label{display: inline;float: none;font-weight: normal;}
+#login-form input[type="image"]{margin: 0px 0px 20px 75px;}
+#forgot-pw{margin: 0px 0px 5px 75px;}
+#forgot-pw a{text-decoration:none;color:#2B89A9;cursor:pointer;outline:none;}
+#forgot-pw a:hover{text-decoration:underline;}
+#forgot-pw a:active{text-decoration:none;}
+#join-info-list{color: #9DB83F;font-weight: bold;list-style-position: inside;margin-top: 10px;width: 300px;}
+ol, ul{list-style: none;}
+#join-info-list li, .hint_list li{list-style-image: url(../images/join_bullet.gif);list-style-position: outside;margin-left: 15px;margin-top: 15px;}
+li{display: list-item;}
+#join-call a img{margin-top: 20px;}
+.right-img{float:right}

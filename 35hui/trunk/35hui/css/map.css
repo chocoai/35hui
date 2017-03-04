@@ -1,0 +1,58 @@
+*{margin:0; padding:0;}
+body{background:#fff;font-size:12px; color:#000; line-height:20px; text-align:left;}
+img{border:0;}
+body, html {height:100%;}
+.itemFocus {background-color:#36c;	cursor:pointer}
+a{color:#04c; text-decoration:none;}a:hover{color:#f30; text-decoration:underline;}
+ul, li{list-style:none;}
+.show {	display:block}
+.hidden {	display:none}
+input, select,textarea{font-size:12px; color:#000;vertical-align:middle;}
+/* wrap --------------------------------------------------- */
+#wrap{width:100%; overflow:hidden;}
+
+/* hearder ------------------------------------------------ */
+#header{width:100%;  margin:0 auto; font-family:"宋体"; height:94px; }
+#header h1{width:169px; height:94px; margin-top:0px; float:left;}
+#header .city{width:70px;height:25px; margin-top:55px;text-align:center; float:left;}
+/*#bheaderbg{background:url(../images/bg.gif) 0 -1928px transparent repeat-x; height:7px;}*/
+#bheaderbg{background:url(../images/tnavbg.png) repeat-x; height:2px; overflow:hidden; width:100%;}
+
+.search{margin-top:9px; float:left; width:900px;}
+.search li{height:22px; margin-top:2px;}
+.search .nav{color:#BEC5CC;}.search .nav a{ margin:0 5px;}
+.search .nav .select{color:#000; font-weight:bold;}
+.search .input{width:420px; height:14px; padding:3px; font-size:14px;}
+.btn_out, .btn_over{width:69px;height:24px;background: url(../images/btn_mapsearch.gif) no-repeat;display:inline-block;border:0;cursor:pointer;}.btn_over{background-position:0px -24px;}
+.search .quick{padding-top:5px; color:#999; position:relative;}
+.search .quick dl{width:85px;border:1px solid #f4ac33;cursor: pointer; position:absolute; left:78px;top:23px;background:#fff;}
+.search .quick dd{padding-left:5px;width:80px;color:#0256b8;cursor: pointer;}
+.search .quick ul{border:1px solid #767575;}
+.search .quick li{float:left;overflow:hidden;height:19px; margin-top:0;}
+/* map ---------------------------------------------------- */
+#map{ width:100%; clear:both;}
+
+.orange,.orange a{color:#F30;}
+.floatl{ float:left;}
+/* icon ------------------------------------------------- */
+#header .town,#header .subway,#header .subwaybj,#header .subwaysh,#header .subwaygz,#header .subwaysz,#header .schoolarea,#header .subwaytj,#header .subwaycd,#header .subwaycq,#header .subwaynj,#header .subwaywuhan,#header .subwayhz,#header .price,#header .area,#header .style{width:75px;
+/*--------modified by mingfang 11-1-4----------*/    background:url(../images/icon_select.gif) no-repeat;padding-left:20px; padding-right:20px;cursor:pointer;}
+#header .town,#header .subway,#header .subwaybj,#header .subwaysh,#header .subwaygz,#header .subwaysz,#header .schoolarea,#header .subwaytj,#header .subwaycd,#header .subwaycq,#header .subwaynj,#header .subwaywuhan,#header .subwayhz{padding-right:35px; color:#000;height:20px;display:inline-block;padding-left:25px;overflow:hidden;float:left;}
+#header .town{background-position:0 -90px;}#header .town:hover{background-position:0 -120px;}
+#header .subwaysh{background-position:0 -240px;}#header .subwaysh:hover{background-position:0 -270px;}
+#header .subwaysz{background-position:0 -360px;}#header .subwaysz:hover{background-position:0 -390px;}
+#header .price {background-position:0 0;}
+#header .style{background-position:0 -60px;}
+#header .area{background-position:0 -30px;}
+.filter div{line-height:21px;float:left; margin-left:5px;} 
+/* pull-down --------------------- */
+.pull-down{width:81px;background:#fff; border:1px solid #999; border-top:none; font-family:Arial;z-index:9999;position:absolute; }
+.pull-down dd{width:76px;padding-left:5px; line-height:22px;color:#04c; cursor:pointer;}
+.input_pd dd:hover{background:#36c; color:#fff;}
+/*.havesecondmenu{background:url(../images/icon_select.gif) -20px -205px  no-repeat;}*/
+/* input pull-down --------------- */
+.input_pd{width:428px;background:#fff; border:1px solid #999; border-top:none; font:12px/24px Arial;z-index:10000;position:absolute;}
+.input_pd dd{width:418px;padding:0 5px;color:#04c; cursor:pointer; float:left;}
+.input_pd dd:hover{background:#36c; color:#fff;}
+/*--------added by mingfang 11-1-17------------*/
+dd span:hover{color:#F00; width:80px;}

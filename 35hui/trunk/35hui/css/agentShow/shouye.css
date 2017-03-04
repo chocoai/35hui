@@ -1,0 +1,44 @@
+	
+#logo{width:720px; height:180px;}
+#logo img{border:0; margin:10px 55px 10px 10px; float:left;}
+#logo dd img{margin:0; *+margin:-15px 0 5px 0;}         /*------added by mingfang 11-2-18------*/
+#logo dt{font-size:16px; color:#006a6e; font-weight:bold; margin:10px 0 3px 0;}
+#logo dd{margin:6px 0;}
+
+.red{color:#F00;}
+
+
+#gonggao{width:720px; padding-top:5px;}
+h1{text-indent:-9999px; background:url(../../images/agentShow/comment_13.gif) no-repeat; height:38px;}
+#gonggao p{width:710px; text-indent:2em; padding-right:10px;}
+h2{text-indent:-9999px; background:url(../../images/agentShow/gonggao.gif) no-repeat; height:26px; margin-top:5px;}
+
+.img{margin:5px 20px 5px 5px;}
+.pingfen{float:left; margin-top:3px; margin-bottom:3px;}
+
+.plneirong{text-indent:2em; margin:3px 0;}
+#dlpl{ line-height:25px; margin:25px 0 15px; text-align:left; width:700px; clear:both;}    /*------modified by mingfang 10-11-18--------*/
+#dlpl a{color:#006a6e; text-decoration:none;}
+#dlpl a:link,#dlpl a:visited{color:#006a6e;}
+#dlpl a:hover{color:#F00;}
+
+#lj{float:left; text-align:center; width:100%;}
+
+
+
+#jingying{ width:100%; margin:10px 0;}
+#jingying ul{margin:0; padding:0;}
+#jingying li{list-style:none; float:left; width:330px; margin-bottom:20px; border:1px solid #ccc; margin-right:10px;}
+.photo{width:100px; height:130px; float:left; margin:5px 10px 5px 5px;*padding-bottom:5px;}
+.photo img{overflow:hidden;}
+.jianjie{white-space:180px; float:left; margin:10px 5px 5px; text-align:left;}
+
+
+/*��վ���ŵ�button*/
+.btn{ background:url(../../images/agentShow/bt.png) no-repeat; width:78px; height:22px; line-height:22px; display:block; text-align:center; color:#FFF;}
+
+/*---------added by mingfang 10-11-19 评论内容样式------------------*/
+.inputborder{border:1px solid #CCCCCC;}
+
+.commentsList textarea{width:600px;}
+

@@ -1,0 +1,27 @@
+.menu {	margin:0;	height:31px;	float:left;	background:url(../images/bg.gif) 0 -1710px transparent no-repeat;}
+.menuleft {	width:530px;	display:block;}
+.menuon {}
+.onelink {	padding-left:4px;}
+
+/*---------modified by mingfang 10年11-15---------*/
+.menu1 LI, .menu1 a {HEIGHT: 31px;	LINE-HEIGHT: 25px;	padding:6px 0 1px 0;	*line-height:31px; *padding:0;	_line-height:31px; _padding:0;	FLOAT: left;}
+.menu1 LI {	padding:0px;	MARGIN: 0px;}
+.menu1 LI a:link, .menu1 LI a:visited {	color:#000;}
+.menu1 LI a:hover {	background:url(../images/spbg.gif) 0 0 no-repeat scroll transparent;	text-decoration: none;	color:#FFF;}
+.menu1 LI ul li a:hover {	background-image:none;	font-weight:normal;}
+.menu1 LI UL {	MARGIN-LEFT: -999em;	POSITION: absolute;}
+.menu1 LI UL li, .menu1 LI UL li a {	line-height:24px;	height:24px;	background-image:none;}
+.menu1 LI:hover, .menu1 LI.sfhover {	background:url(../images/spbg.gif) 0 0 no-repeat scroll transparent;	color:#FFF;}
+.menu1 LI:hover a, .menu1 LI.sfhover a {	color:#FFF;	font-weight:normal;}
+.menu1 LI:hover UL, .menu1 LI.sfhover UL {	MARGIN-TOP: 31px;	padding:4px;	Z-INDEX: 5;	MARGIN-LEFT: 0px;	WIDTH: 120px;	POSITION: absolute;	background-color:#f1f1f1;	opacity: 0.90; CLEAR: both; +MARGIN-TOP: 0px;}
+.menu1 LI:hover UL LI A, .menu1 LI.sfhover UL LI A {	DISPLAY: block;	PADDING: 0px 0px 0px 25px;	FONT-WEIGHT: normal;	FONT-SIZE: 13px;	MARGIN: 0px;	WIDTH: 85px;	color:#333;	TEXT-ALIGN: left;}
+.menu1 LI:hover UL LI A:hover, .menu1 LI.sfhover UL LI A:hover {BACKGROUND-COLOR: #f1f1f1;	color:#016a6e;}
+.menu1 UL LI UL {	DISPLAY: none;}
+.menu1 UL LI UL LI A:hover {	DISPLAY: block;	FILTER: alpha (opacity=85);	MARGIN-LEFT: 50px;	WIDTH: 102px;	POSITION: absolute;	BACKGROUND-COLOR: #666;}
+.selected span {color:#FFF;}
+#navMenu li a:hover span{color:#FFF;}
+
+/*---------modified by mingfang 10-11-15---------*/
+.jb li a:hover span{color:#FF6600;}
+
+

@@ -1,0 +1,30 @@
+
+2010-05-10 15:10  修改内容如下：
+
+1.写字楼基本信息表(35_officebaseinfo):
+	新加入字段：ob_bidding,
+	数据类型为：int ；
+	数据长度：11 ；
+	字段描述：是否竞价；
+	默认值：0，0代表不竞价；1代表竞价。
+	其作用在于商务中心首页的“商务中心精选”功能模块里，根据该字段的值判定商务中心房源信息是否在商务中心首页以竞价排行方式显示。
+
+2.写字楼展示信息表(35_ officepresentinfo):
+	将原有字段op_serialnum(经纪公司内容序列号) 改为 op_serialid(经纪人id) ，
+	数据类型由原来的varchar(50)类型改为int(11),
+	字段描述：经纪人信息表(35_uagent)的外键；
+	默认值：非空；
+	其作用在于商务中心首页的“商务中心精选”功能模块里，可根据该字段的值关联查询到发布竞价房源信息的对应经纪人姓名，并在相应位置显示。
+	
+
+
+2010-05-11 21:10 修改数据库内容如下：
+
+1.添加商务中心视图35_viewbusiness
+
+	该视图主要用于单个商务中心信息展示页的数据提取。
+	其sql脚本如下：
+
+select `35_officebaseinfo`.`ob_officeid` AS `ob_officeid`,`35_officebaseinfo`.`ob_uid` AS `ob_uid`,`35_officebaseinfo`.`ob_province` AS `ob_province`,`35_officebaseinfo`.`ob_city` AS `ob_city`,`35_officebaseinfo`.`ob_buildingtype` AS `ob_buildingtype`,`35_officebaseinfo`.`ob_officename` AS `ob_officename`,`35_officebaseinfo`.`ob_bidding` AS `ob_bidding`,`35_officebaseinfo`.`ob_officetype` AS `ob_officetype`,`35_officebaseinfo`.`ob_administrativearea` AS `ob_administrativearea`,`35_officebaseinfo`.`ob_district` AS `ob_district`,`35_officebaseinfo`.`ob_tradecircle` AS `ob_tradecircle`,`35_officebaseinfo`.`ob_busway` AS `ob_busway`,`35_officebaseinfo`.`ob_officeaddress` AS `ob_officeaddress`,`35_officebaseinfo`.`ob_propertycomname` AS `ob_propertycomname`,`35_officebaseinfo`.`ob_propertycost` AS `ob_propertycost`,`35_officebaseinfo`.`ob_foreign` AS `ob_foreign`,`35_officebaseinfo`.`ob_officearea` AS `ob_officearea`,`35_officebaseinfo`.`ob_floor` AS `ob_floor`,`35_officebaseinfo`.`ob_buildingage` AS `ob_buildingage`,`35_officebaseinfo`.`ob_cancut` AS `ob_cancut`,`35_officebaseinfo`.`ob_adrondegree` AS `ob_adrondegree`,`35_officebaseinfo`.`ob_officedegree` AS `ob_officedegree`,`35_officebaseinfo`.`ob_sellorrent` AS `ob_sellorrent`,`35_officebaseinfo`.`ob_releasedate` AS `ob_releasedate`,`35_officebaseinfo`.`ob_expiredate` AS `ob_expiredate`,`35_officefacilityinfo`.`of_id` AS `of_id`,`35_officefacilityinfo`.`of_officeid` AS `of_officeid`,`35_officefacilityinfo`.`of_carparking` AS `of_carparking`,`35_officefacilityinfo`.`of_warming` AS `of_warming`,`35_officefacilityinfo`.`of_network` AS `of_network`,`35_officefacilityinfo`.`of_electricity` AS `of_electricity`,`35_officefacilityinfo`.`of_water` AS `of_water`,`35_officefacilityinfo`.`of_elevator` AS `of_elevator`,`35_officefacilityinfo`.`of_gas` AS `of_gas`,`35_officesellinfo`.`os_id` AS `os_id`,`35_officesellinfo`.`os_officeid` AS `os_officeid`,`35_officesellinfo`.`os_sellprice` AS `os_sellprice`,`35_officerentinfo`.`or_id` AS `or_id`,`35_officerentinfo`.`or_officeid` AS `or_officeid`,`35_officerentinfo`.`or_rentprice` AS `or_rentprice`,`35_officerentinfo`.`or_iscontainprocost` AS `or_iscontainprocost`,`35_officerentinfo`.`or_renttype` AS `or_renttype`,`35_officerentinfo`.`or_payway` AS `or_payway`,`35_officerentinfo`.`or_basetime` AS `or_basetime`,`35_officepresentinfo`.`op_id` AS `op_id`,`35_officepresentinfo`.`op_officeid` AS `op_officeid`,`35_officepresentinfo`.`op_officetitle` AS `op_officetitle`,`35_officepresentinfo`.`op_serialid` AS `op_serialid`,`35_officepresentinfo`.`op_officedesc` AS `op_officedesc`,`35_officepresentinfo`.`op_traffice` AS `op_traffice`,`35_officepresentinfo`.`op_carparking` AS `op_carparking`,`35_officepresentinfo`.`op_facilityaround` AS `op_facilityaround`,`35_officepresentinfo`.`op_ichnographyurl` AS `op_ichnographyurl`,`35_officepresentinfo`.`op_outdoorpicurl` AS `op_outdoorpicurl`,`35_officepresentinfo`.`op_indoorpicurl` AS `op_indoorpicurl`,`35_officepresentinfo`.`op_titlepicurl` AS `op_titlepicurl`,`35_officepresentinfo`.`op_outdoorvideourl` AS `op_outdoorvideourl`,`35_officepresentinfo`.`op_indoorvideourl` AS `op_indoorvideourl`,`35_officepresentinfo`.`op_3durl` AS `op_3durl`
+from ((((((`35_officebaseinfo` join `35_officefacilityinfo` on((`35_officefacilityinfo`.`of_officeid` = `35_officebaseinfo`.`ob_officeid`))) join `35_officepresentinfo` on((`35_officepresentinfo`.`op_officeid` = `35_officebaseinfo`.`ob_officeid`))) join `35_officerentinfo` on((`35_officerentinfo`.`or_officeid` = `35_officebaseinfo`.`ob_officeid`))) join `35_officetag` on((`35_officetag`.`ot_officeid` = `35_officebaseinfo`.`ob_officeid`))) join `35_user` on((`35_user`.`user_id` = `35_officebaseinfo`.`ob_uid`))) join `35_officesellinfo` on((`35_officesellinfo`.`os_officeid` = `35_officebaseinfo`.`ob_officeid`)))
+

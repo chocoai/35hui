@@ -1,0 +1,32 @@
+.scrollable { float: left;	position:relative;	overflow:hidden;}
+.scrollable .items {width:20000em;	position:absolute;	clear:both;}
+.items div {float:left;	width:680px;}
+.items img {float:left;}
+/* single scrollable item */
+.scrollable img {float:left;margin:20px 5px 20px 10px;	background-color:#fff;	padding:2px;	border:1px solid #ccc;	width:100px;	height:75px;	-moz-border-radius:4px;	-webkit-border-radius:4px;}
+/* active item */
+.scrollable .active {	border:2px solid #000;	position:relative;	cursor:default;}
+a.browse {	background:url(../tools/img/scrollable/hori_large.png) no-repeat;width:30px;	height:30px;	float:left;	margin:40px 5px;	cursor:pointer;	font-size:1px;	display:inline;}
+a.right { background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover{ background-position:-30px -30px; }
+a.right:active { background-position:-60px -30px; }
+a.left	{ margin-left: 0px; }
+a.left:hover { background-position:-30px 0; }
+a.left:active { background-position:-60px 0; }
+a.up, a.down{background:url(../tools/img/scrollable/vert_large.png) no-repeat;	float: none;	margin: 10px 50px;}
+a.up:hover { background-position:-30px 0; }
+a.up:active  { background-position:-60px 0; }
+
+/* down */
+a.down 	{ background-position: 0 -30px; }
+a.down:hover { background-position:-30px -30px; }
+a.down:active { background-position:-60px -30px; }
+
+/* disabled navigational button */
+a.disabled {visibility:hidden !important;}
+/* styling for the image wrapper  */
+#image_wrap { width:677px;  margin-left: auto;  margin-right: auto; margin-bottom: 20px; padding:15px 0; text-align:center; background-color:#efefef; border:2px solid #fff; outline:1px solid #ddd;   -moz-ouline-radius:4px;}
+.img_wrap{  width:677px; margin-left: auto; margin-right: auto; margin-bottom: 20px; padding:15px 0; text-align:center; background-color:#efefef; border:2px solid #fff; outline:1px solid #ddd; -moz-ouline-radius:4px;}
+.item_vessel{  width:120px;  height: 130px; float:left;  list-style:none;_width:100px;}
+.item_vessel img {	float:left;	margin:20px 10px 5px 10px;_margin:20px 0px 5px 0;	background-color:#fff;	padding:2px;	border:1px solid #ccc;	width:100px;	height:75px;	display:inline;	_padding:0;	-moz-border-radius:4px;	-webkit-border-radius:4px;}
+.item_vessel div{ width:110px; height: 20px; line-height: 20px; text-align: center; margin: 0px 5px; overflow: hidden;_width:100px;	_margin:0 4px;}

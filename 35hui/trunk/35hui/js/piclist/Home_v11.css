@@ -1,0 +1,48 @@
+html{height:100%;margin:0;padding:0; border:0;font-family:宋体}
+/* 清除内外边距 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+/* 设置默认字体 */
+body,button,input,select,textarea {font:12px/1 "\5b8b\4f53", Arial, Tahoma, Helvetica, sans-serif;}
+/*重置列表元素*/
+a{text-decoration:none;}
+/* yaoxi's css st*/
+img{ border:0;}
+/*base info st*/
+.phone_title{color:#666;margin-bottom:2px;font-size:12px;}
+.xzl_name{font:normal 24px "微软雅黑";line-height:24px;height:24px;padding:10px 0;position:relative;}
+.xzl_name .s_star{margin:6px 0 0 10px;}
+.PicShow {height:100%;width:493px;z-index:980;}
+.info{padding:3px;width:944px;}
+.info_con{border:1px solid #acbcd3;width:942px;}
+.lof-slidecontent{height:300px;overflow:hidden;padding:12px 0px 0px;}
+.lof-slidecontent a {color:#FFF;}
+.lof-slidecontent a.readmore{color:#58B1EA;font-size:95%;}
+.lof-slidecontent .preload{height:100%;width:100%;position:relative;top:0;left:0;z-index:720;text-align:center;}
+.lof-slidecontent .preload div{height:100%;width:100%;}
+.lof-main-outer{position:relative;height:100%;overflow:hidden;width:400px;height:290px; float:left;}
+.lof-main-item-desc{background:url(bg_trans.png);position:absolute;bottom:0px;left:0px; clear:both;height:30px; width:400px; line-height:30px;z-index:710;font:normal 16px "宋体";}
+/* main flash */
+ul.lof-main-wapper{overflow:hidden;position:absolute;width:400px;height:354px;z-index:730;}
+ul.lof-main-wapper li{overflow:hidden;width:400px;height:299px;}
+.lof-opacity li{position:absolute;top:0;left:0;}
+ul.lof-main-wapper li a img{width:400px;height:290px;}
+/* item navigator */
+.lof-navigator-wapper{width:80px;height:290px;z-index:800; float:right;}
+.lof-navigator-outer{position:relative;height:180px;width:620px;overflow:hidden;color:#FFF;float:left;}
+ul.lof-navigator{position:absolute;width:100%;}
+ul.lof-navigator li{cursor:hand; cursor:pointer;list-style:none;overflow:hidden;float:left;display:inline;text-align:center;}
+ul.lof-navigator li img{width:58px;height:44px;display:inline;margin:0 5px;}
+.lof-navigator li.active img{border:4px solid #c9c6c6;width:50px;height:35px;margin:0 5px;}
+.lof-navigator li:hover img{border:4px solid #c9c6c6;width:50px;height:35px;margin:0 5px;}
+ul.lof-navigator li.active img, ul.lof-navigator li:hover img {border:#81b531 solid 3px;}
+.lof-navigator-wapper .lof-next,  .lof-navigator-wapper .lof-previous{display:block;width:80px;height:30px;color:#FFF;cursor:pointer;}
+.lof-navigator-wapper .lof-next {background:url(arrow-l1.png) no-repeat 22px -12px; width:80px;}
+.lof-navigator-wapper .lof-previous {background:url(arrow-r1.png) no-repeat 20px 5px;width:80px; clear:both; height:30px;}
+#container {width:608px;margin:10px auto;background:#FFFFFF;font-size:12px;position:relative;overflow:hidden}
+.img_LN{width:608px;height:456px;z-index:700;position:absolute; overflow:hidden}
+.img_SN{width:608px;height:456px;z-index:690;position:absolute;overflow:hidden}
+
+
+
+
+

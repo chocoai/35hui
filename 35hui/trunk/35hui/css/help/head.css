@@ -1,0 +1,286 @@
+﻿/* CSS Document */
+/*-----------------全局------------------*/
+.orange {
+	color:#F60;
+}
+.green {
+	color:#327b00;
+}
+.gray {
+	color:#7b7a79;
+}
+/*----------------全局 End-------------------*/
+#allhead {
+	width:1003px;
+	margin:0 auto;
+	height:153px;
+}
+#bg {
+	background:url(../images/bg.gif) 0 -722px #fff no-repeat;
+	margin:0 auto;
+	height:117px;
+}
+.login {
+	height:28px;
+}
+#lgn_wrap {
+	width:485px;
+	float:left;
+	margin:4px 0;
+}
+.lgn_ipt {
+	width:130px;
+	_width:140px;
+	height:18px;
+	border:1px solid #DDD7C1;
+	float:left;
+	margin-left:4px;
+}
+.lgn_ipt .w {
+	border:1px solid #fff;
+	background-color:#F5F1E5;
+	height:16px;
+	width:46px;
+	text-align:center;
+	color:#555;
+	float:left;
+}
+.lgn_ipt .ipt {
+	display:block;
+	border:0;
+	height:16px;
+	width:60px;
+	_width:60px;
+}
+.lgn_lnk {
+	margin-left:4px;
+	color:#E2E2E2;
+}
+.lgn_lnk a {
+	color:#949494;
+	text-decoration:none;
+}
+/*--------modified by  mingfang 10-11-15--------*/
+#topmenu {
+	float:right;
+	font:bold 12px/25px "宋体";
+	color:#fff;
+	width:255px;
+	text-align:center;
+	position:absolute;
+	right:10px;
+	top:0;
+}
+#topmenu a {
+	font:bold 12px/25px "宋体";
+	color:#fff;
+	text-decoration:none;
+}
+#searchbar {
+	margin-left:412px;
+	width:581px;
+}
+.searchbarmain {
+	width:566px;
+	height:41px;
+	background:url(../images/bg.gif) 0 -601px no-repeat transparent;
+	padding-left:15px;
+}
+.searchbartab {
+	height:30px;
+	padding-left:29px;
+	width:552px;
+}
+.searchbartab .on {
+	background:url(../images/searchbartabbg.gif) transparent no-repeat 0 0;
+	height:30px;
+	width:68px;
+	position:relative;
+	top:3px;
+	z-index:10;
+	font:bold 12px/30px "宋体";
+	text-align:center;
+	float:left;
+}
+.searchon {
+	background:url(../images/bg.gif) 0 -943px transparent no-repeat;
+	height:30px;
+	width:68px;
+	position:relative;
+	top:3px;
+	z-index:10;
+	font:bold 12px/30px "宋体";
+	text-align:center;
+	float:left;
+}
+.searchbarmain2 {
+	width:540px;
+	height:41px;
+	background:url(../images/bg.gif) 0 -1640px no-repeat transparent;
+	padding-left:15px;
+}
+.searchbartab .on a {
+	color:#000;
+	text-decoration:none;
+}
+.searchbartab .off {
+	height:30px;
+	width:68px;
+	position:relative;
+	top:3px;
+	z-index:10;
+	font:bold 12px/30px "宋体";
+	text-align:center;
+	float:left;
+}
+.searchbartab .off a {
+	color:#02696E;
+	text-decoration:none;
+}
+.searchbarinput {
+	width:336px;
+	height:26px;
+	border:1px solid #D5D5D5;
+	margin-top:6px;
+	font:normal 12px/26px "宋体";
+	color:#333;
+	margin-right:12px;
+}
+.searchbarbtn {
+	background:url(../images/bg.gif) 0 -679px #fff no-repeat;
+	height:28px;
+	width:130px;
+	font-weight:bold;
+	color:#000;
+	border:0;
+	margin-left:12px;
+	/*-------------modified by mingfang 10-11-12----------------*/
+	*+margin-left:0px;
+	_margin-left:0px;
+	/*-------------modified by mingfang 10-11-17----------------*/
+	cursor:pointer;
+}
+#topnav {
+	height:37px;
+	margin-top:17px;
+	background:url(../images/topnavbg.gif) transparent repeat-x 0 100%;
+}
+/*.topnavtab {
+	margin-left:342px;
+	height:31px;
+}*/
+/*--------------modified by  mingfang 10-11-15-------------------*/
+.topnavtab {
+	margin-left:342px;
+	height:31px;
+/*	position:relative;*/
+	width:662px;
+	overflow:hidden;
+}
+.topnavtab .on {
+	background:url(../images/bg.gif) 0 -911px #fff no-repeat;
+	width:81px;
+	height:19px;
+	text-align:center;
+	padding-top:12px;
+	float:left;
+}
+.topnavtab .on a {
+	font:bold 14px "宋体";
+	color:#fff;
+	text-decoration:none;
+}
+.topnavtab .off {
+	height:21px;
+	padding:6px 15px 0 15px;
+	float:left;
+	margin-top:3px;
+}
+.topnavtab .end {
+	background:none;
+	padding:6px 10px 0 15px;
+}
+.topnavtab .navend {
+	height:28px;
+	width:6px;
+	float:left;
+	margin-top:3px;
+}
+.topnavtab .off a {
+	font:normal 14px "宋体";
+	color:#0B0B0B;
+	text-decoration:none;
+}
+.lg {
+	background:url(../images/bg.gif) 0 -845px no-repeat;
+	width:44px;
+	height:20px;
+}
+/*------#banner-------*/
+#advert {
+	background: url(../images/365.gif) no-repeat;
+	display:inline;
+	float:left;
+	height:300px;
+	margin:0;
+	width:240px;
+}
+.advert_wz {
+	display:inline;
+	float:left;
+	font-size:14px;
+	height:200px;
+	line-height:30px;
+	margin:50px 40px;
+	text-align:left;
+	width:160px;
+}
+#in_advert {
+	background:url(../images/365_botom.png) no-repeat scroll right 196px transparent;
+	float:left;
+	height:305px;
+	width:240px;
+}
+/*------#banner shipin-------*/
+#shipin {
+	width:455px;
+	float:left;
+	height:300px;
+}
+.slider {
+	width:300px;
+	float:right;
+	display:inline;
+	height:300px;
+	border:1px solid #D6EFC7;
+	list-style:none;
+}
+.slider li {
+	border-bottom:1px solid #D6EFC7;
+	cursor:pointer;
+	padding:2px 0 2px 0px;
+	height:70px;
+	clear:both;
+	float:left;
+	width:295px;
+}
+.slider .current {
+	background:#E6F4D0;
+	border-left:5px solid #91D550;
+	padding-left:2px;
+}
+.slider .hover {
+	background:#E6F4D0;
+}
+.slider .last {
+	border-bottom:medium none;
+}
+.pic {
+	border:0;
+	padding:2px;
+}
+#msnr {
+}
+#msnr td {
+	padding-left:5px;
+}

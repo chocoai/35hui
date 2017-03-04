@@ -1,0 +1,45 @@
+#two_left{padding-right:5px;COLOR: black;}
+.news_summary{background: white;border: 1px solid #DCDDDD;font-size: 14px;line-height: 23px;margin: 15px 0px 0px;padding: 12px 5px 6px;text-align: justify;text-indent: 2em;background:#FEFDE8; padding:8px 16px 4px;}
+ /*-------added by mingfang 10-11-26--------*/
+/**p{margin:10px 0;}**/
+#news_text{clear: both;font-size: 14px;line-height: 23px;overflow: hidden;padding: 9px 0px;text-align: justify;word-wrap: break-word;}
+#news_rel_title{padding:10px 0px 5px 15px;border-top:1px dotted #DCDDDD;font-size:14px;}
+#news_rel_body{padding-left:15px;border-bottom:1px dotted #DCDDDD;padding-bottom:10px;}
+#news_rel_body li{background: url(../images/news_rel.gif) no-repeat 0% 50%;color: #1E50A2;font-size: 14px;line-height: 25px;padding-left: 10px;list-style-type: none;display: list-item;}
+#news_cmt_head{padding-left:15px;}
+/*-----------��  10-11-10���޸�--------*/
+.post_head{margin-top:5px;_margin-top:12px;padding:0;}
+/*------------------------------------------*/
+.news_cmt_body{clear: both;font-size: 14px;padding: 12px 0px;}
+.zs4_list li{background: url(../images/point.gif) no-repeat 5px 50% transparent;display: inline;float: left;height: 24px;line-height: 24px;list-style-image: none;list-style-type: none;margin-left: 15px;padding-left: 15px;text-align: left;}
+.zs4_list .nr{float: left;width:180px;}
+.zs4_list .nrf{float: left;width: 250px;}
+.rankList .td_R{color: #BA2636;float:left; padding-left: 6px;padding-right: 6px;}
+.article_list_s2 {margin-top:10px;}
+.head_article_list {background: #F4F4F4 url(../images/news_list.png) no-repeat 5px 50%;border-bottom: 1px solid #CCC;height: 30px;}
+.clearfix {display: block;}
+.clearfix::after {clear: both;content: '.';display: block;height: 0px;visibility: hidden;}
+.head_article_list_a {float: left;font-size: 14px;font-weight: bold;padding-left: 30px;height: 23px;padding-top: 7px;}
+.news_ul_list {list-style-image: none;list-style-type: none;margin: 0px;padding: 5px;}
+.news_li_list {background: url(../images/point.gif) no-repeat 5px 50%;border-bottom: 1px dashed #CCC;height: 26px;padding-top: 7px;}
+.li_article_list_a {float: left;padding-left: 24px;width: 530px;}
+.li_article_list_b {float: right;width: 78px;}
+.news_add_cmt{margin-top:10px;}
+.pinglunneirong{line-height:20px; padding-top:5px; _margin-bottom:-10px;}
+
+/*-----------modified by mingfang 10-11-29-------------*/
+#news_cmt_area{border:1px solid #DBDBDB; width:718px; padding-bottom:15px; padding-top:3px;}
+#news_cmt_area h3{float:left;font-size:14px;font-weight:bold;display:block;width:718px;height:30px;line-height:30px;}
+#new_cmt_area  .tit{background-color:#F2F2F2;height:21px;padding:19px 12px 0;}
+#news_cmt_area .con1{background: url(../images/pingl_bg.gif) no-repeat scroll left top #F8F8F8;border-top:1px solid #DBDBDB;margin-top:12px;padding:10px 14px 4px;}
+.con{border-bottom:1px dashed #B2B2B3;margin:0 14px;padding:14px 0 4px;}
+.con dl{height:20px;}
+.con dt{color:#005197;float:left;font-weight:bold;width:200px;}
+.con dd{color:#7D7D7D;float:right;height:20px;text-align:right;width:200px;}
+.con .bg1{background-color:#F7F7F7;color:#7D7D7D;line-height:18px;padding:4px 6px;}
+.news_add_cmt{background:url("../images/pingl_bg.gif") no-repeat scroll left top #F8F8F8;border:1px solid #DBDBDB;margin-top:12px;padding:10px 14px 4px; width:690px; _width:690px; _overflow:hidden;}
+.sp2{padding:18px 0 10px 30px; width:700px;}
+.new_te3{border:1px solid #B2B2B2;color:#464646;font-size:14px;height:80px;padding:10px 8px;width:600px;_650px;}
+.send{padding-bottom:15px;  text-align:right; margin-right:60px;}
+/*---------modified by mingfang 11-1-20-----------*/
+.send input[type="submit"]{background:url("../images/con_btn.png") no-repeat; width:67px; height:21px; border:none;}       

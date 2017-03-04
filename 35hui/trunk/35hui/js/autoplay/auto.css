@@ -1,0 +1,37 @@
+﻿#autoplayer{position:relative;width:430px;height:280px;overflow:hidden; margin:0px auto 0 auto; }
+#autoplayer a{color:#333;}
+#autoplayer *{border:0;padding:0;margin:0;}
+#autoplayer .Limg{position:relative;}
+#autoplayer .Limg li{position:absolute;top:0;left:0;background:#fff;}
+#autoplayer .Limg li  p{line-height:25px; font-size:14px; padding-left:15px;}
+#autoplayer .Nubbt{position:absolute;z-index:9;right:5px;bottom:10px; line-height:25px;}
+#autoplayer .Nubbt span{cursor: pointer;display: block;float: left;overflow: hidden;
+                    height: 12px;margin: 5px 2px;width: 15px;
+                    background: url(/js/autoplay/bg.gif) no-repeat 0px 0px;
+}
+#autoplayer .Nubbt span.on{
+    background: url(/js/autoplay/bg.gif) no-repeat 0px -15px;
+    /** background-position: 0% -526px;
+     background-repeat: no-repeat;**/
+}
+#autoplayer .bag{
+    font-size: 12px;
+    bottom: 0;
+    height: 35px;
+    line-height: 15px;
+    position: absolute;
+    z-index: 8;
+    left:0px;
+    background-color: white;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=74)"; /*IE8*/
+    filter:alpha(opacity=64);  /*IE5、IE5.5、IE6、IE7*/
+    opacity: .64;  /*Opera9.0+、Firefox1.5+、Safari、Chrome*/
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+#autoplayer .bag span{
+    color: #333;
+}
+.hidden{ display: none;}
+.show{display: block}

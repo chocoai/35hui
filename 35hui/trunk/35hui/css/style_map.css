@@ -1,0 +1,52 @@
+*{margin:0 auto; padding:0;}
+.clear{ clear:both; width:100%; height:10px;}
+.clear5{ clear:both; width:100%; height:5px;}
+/*********header******************/
+#header{ float:left;  height:140px; width:100%; background:#FFFFFF; overflow:hidden; }
+#header_top{ float:left; background:url(../images/top_bg.gif) repeat-x; height:98px; width:100%; }
+#logo{ float:left; margin-left:40px; display:inline;}
+#search{ float:right; margin-right:30px; background:url(../images/search.jpg) left top no-repeat; width:210px; height:100%; padding-left:128px;}
+#lx{ float:right; width:100%; }
+#lx ul{ margin-top:25px; float:left; display:inline; margin-left:10px; display:inline; }
+#lx ul li{ float:left; list-style:none; margin-right:10px; }
+#lx ul li a{ color:#444444; font-weight:bold; text-decoration:none;}
+.userinput{ width:170px; margin:8px 8px 0 0;}
+#qy{ float:right; width:100%; }
+#qy ul{ float:left; display:inline; margin-left:10px; display:inline; margin-top:8px; }
+#qy ul li{ float:left; list-style:none; margin-right:10px; }
+#qy ul li a{ color:#444444; font-weight:bold; text-decoration:none;}
+#nav{ float:left; height:40px; background:url(../images/nav_bg.gif) repeat-x; width:100%; }
+#nav ul{ float:left; margin-left:40px; display:inline;}
+#nav ul li{ float:left; list-style:none; font-size:14px; font-weight:bold; padding-left:10px ; margin-right:30px; width:100px; }
+#nav ul li a{ color:#1b242f; text-decoration:none; line-height:45px; }
+.now{ float:left; background:url(../images/now_bg3.jpg) no-repeat; width:90px;}
+#nav .now a{ color:#FFFFFF;}
+#action{background: url(../images/nav_bg2.gif)  repeat-x; height: 40px; float:left; padding-left:20px; display:inline; width:100%; text-align:left;  line-height:30px;   margin-bottom: 5px;   padding-left: 0%;}
+#center{	width:100%;}
+
+/*********sidebar****/
+#sidebar{ float:right; background:#FFFFFF; height:650px; width:15%; height:1000px; min-height:650px; height:auto!important; }
+#map{float:left;width:85%;height: 620px}
+.portlet{	margin: 0;	padding: 3px;	margin-bottom:15px;	background-color:#EEE;}
+.portlet .header{color:#555;font-size:50px;	font-family:"宋体";	font-weight:bold;	line-height:1;	padding:5px 10px 6px;	margin: 0;	text-align:center;}
+.portlet .content{ font-size:13px;	font-family:"宋体";	-moz-border-radius:5px;	-moz-border-radius:5px;	background:#F5F5F5;	padding:5px 5px 10px 5px;	text-align:left;}
+.portlet .content a:link { color:#0000FF; list-style:none; text-decoration:none; }
+.portlet .content a:visited { color: #0000FF; text-decoration: none}
+.portlet .content a:hover { color: #800080; text-decoration: underline}
+.portlet .content a:active { color: #800080; text-decoration: underline}
+.portlet ul, .portlet ol{	list-style-image:none;	list-style-position:outside;	list-style-type:none;	margin: 0 0 0 5px;	padding: 0;}
+.portlet li{	padding: 2px 0 4px 0px;}
+.portlet .row{	margin: 0 0 5px 0;}
+.portlet .row .hint{	margin: 0;	padding: 0;	color: #999;}
+/*****footer*******/
+#footer{ float:left; width:1253px;   float:left; height:80px; background: #ffffff; border-top:1px solid #cccdd0; }
+#lj{ float:left; text-align:center; width:100%;  }
+#lj ul{ width:600px; padding-top:20px;  }
+#lj ul li{ float:left; list-style:none;}
+#lj ul li a{ color:#313131; text-decoration:none;}
+#footer p{ line-height:30px; width:100%; color:#006a6e; }
+#lj ul li a:hover{ color:#006a6e;}
+
+
+
+

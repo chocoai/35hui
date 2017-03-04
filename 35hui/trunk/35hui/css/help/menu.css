@@ -1,0 +1,42 @@
+.menu {	margin:0;height:31px;float:left;background:url(../../images/bg.gif) 0 -1710px transparent no-repeat;}
+.menu li {float:left;line-height:31px;	margin-right:30px;	font-size:14px;	font-weight:bold;	list-style:none;}
+.menuleft {	width:530px;	display:block;}
+.menuon {}
+#navMenu {	width:100%;	height: 31px;	line-height: 31px;	display:block;	overflow:hidden;	margin-right:40px;	margin-left:0px;}
+.onelink {padding-left:4px;}
+.menu1 {Z-INDEX: 6;}
+.menu1, .menu1 UL {	padding:0px;	margin:0px;	list-style-type: none;}
+/*---------modified by mingfang 10年11-15---------*/
+.menu1 LI, .menu1 a {HEIGHT: 31px;	LINE-HEIGHT: 25px;	padding:6px 0 1px 0;	line-height:31px;padding:0;	FLOAT: left;}
+.menu1 LI {	padding:0px;	MARGIN: 0px;}
+.menu1 a {DISPLAY: block;	FONT-WEIGHT: normal;	FONT-SIZE:14px;	MARGIN: 0px;	WIDTH: 81px;	FONT-FAMILY: Arial, Helvetica, sans-serif;	TEXT-ALIGN: center;	text-decoration:none;}
+.menu1 LI a:link, .menu1 LI a:visited {color:#000;}
+.menu1 LI a:hover {	background:url(../../images/bg.gif) 0 -911px no-repeat scroll transparent;	text-decoration: none;	color:#FFF;}
+.menu1 LI ul li a:hover {background-image:none;	font-weight:normal;}
+.menu1 LI UL {	MARGIN-LEFT: -999em;	POSITION: absolute;}
+.menu1 LI UL li, .menu1 LI UL li a {line-height:24px;height:24px;	background-image:none;}
+.menu1 LI:hover, .menu1 LI.sfhover {background:url(../../images/bg.gif) 0 -910px transparent no-repeat;	color:#FFF;}
+.menu1 LI:hover a, .menu1 LI.sfhover a {color:#FFF;	font-weight:normal;}
+.menu1 LI:hover UL, .menu1 LI.sfhover UL {	MARGIN-TOP: 31px;	padding:4px;	Z-INDEX: 5;	MARGIN-LEFT: 0px;	WIDTH: 120px;	POSITION: absolute;	background-color:#f1f1f1;	opacity: 0.90;}
+.menu1 LI:hover UL LI A, .menu1 LI.sfhover UL LI A {DISPLAY: block;	PADDING: 0px 0px 0px 25px;	FONT-WEIGHT: normal;	FONT-SIZE: 13px;	MARGIN: 0px;	WIDTH: 85px;	color:#333;	TEXT-ALIGN: left;}
+.menu1 LI:hover UL LI A:hover, .menu1 LI.sfhover UL LI A:hover {BACKGROUND-COLOR: #f1f1f1;	color:#016a6e;}
+.menu1 UL LI UL {	DISPLAY: none;}
+.menu1 UL LI UL LI A:hover {DISPLAY: block;	FILTER: alpha (opacity=85);	MARGIN-LEFT: 50px;	WIDTH: 102px;	POSITION: absolute;	BACKGROUND-COLOR: #666;}
+.selected {	background:url(../../images/bg.gif) 0 -910px no-repeat;}
+.selected span {color:#FFF;}
+#navMenu li a:hover span{color:#FFF;}
+/*---------modified by mingfang 10-11-15---------*/
+.jb li a:hover span{color:#FF6600;}
+/*------------added by mingfang 11-1-5----------------*/
+.aboutmenu{ clear: both;background:url(../../images/help/lfnav_05.jpg) repeat-y;  height:800px; padding:20px 10px 0 10px;}
+.aboutmenu ul{}
+.aboutmenu ul li{text-indent:30px;height:20px; text-align:left; padding:5px 0; line-height: 20px; color:#333333;}
+.aboutmenu ul li a{ display: block; line-height:20px; color:#333333; font-weight: bold; font-size: 14px;}
+.subaboutmenu{background-color:white;visibility:hidden;	height:0px;	display:none}
+.subaboutmenu_hidden{	height:0px;	visibility:hidden;	display:none}
+.subaboutmenu_show{	background-color:white;	height:auto;	visibility:visible;	display:block}
+.currentmenu{	background-color:white;}
+.helpbottom{}
+.div_hr{height:1px;border-bottom:1px solid gray;margin:auto;width:80%}
+#footer p{text-align:center; line-height:30px; color: #006A6E;}
+

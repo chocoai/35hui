@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="上海租房,上海买房,全景看房-尽在新地标！" />
+	<meta name="description" content="上海新地标房产网致力于提供上海写字楼、上海办公楼、上海办公房、上海商务楼、甲级写字楼、高档写字楼、商务中心的租赁出租出售买卖购买服务，提供最准确及时的写字楼市场新闻，打造最全面权威的写字楼资料查询，最便捷的写字楼出租出售求租求购平台。" />
+    <link rel="stylesheet" type="text/css" href="../js/autoplay/auto.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/cfa30a70/autocomplete/jquery.autocomplete.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.bgiframe.js"></script>
+    <script type="text/javascript" src="../js/jquery.dimensions.js"></script>
+    <script type="text/javascript" src="../js/jquery.ajaxqueue.js"></script>
+    <script type="text/javascript" src="../js/jquery.autocomplete.js"></script>
+    <script type="text/javascript" src="../js/autoplay/auto.js"></script>
+	<title>上海写字楼,上海办公楼,上海办公房,上海商务中心租赁出租出售买卖-上海新地标</title>
+    <link href="../css/newglobal.css" type="text/css" rel="stylesheet" />
+    <link href="../css/css.css" type="text/css" rel="stylesheet" />
+</head>
+        <body>
+        <div class="container">
+            <div class="header">
+                <div class="top">
+                    您好，欢迎来新地标找房！<a href="/site/agentlogin">登录</a>|<a href="/site/agentregister">注册</a>                </div>
+                <div class="logoline" cll>
+                    <div class="logo" style="position: relative;"><a title="360dibiao.com - 商业地产第一推广平台" href="/"><img src="../images/logo.gif" alt="新地标" height="57" /></a></div>
+                    <div class="step"><img src="../images/hstep.jpg" title="专业的房地产中介服务，专业的360实景商业地产房源展现 " alt="专业的房地产中介服务，专业的360实景商业地产房源展现 " /></div>
+                </div>
+                <div class="nav">
+                                        <ul>
+                        <li class="clk"><a href="/">首&nbsp;&nbsp;页</a></li>
+                        <li class="clk">
+                            <div class="tnav" style="display: none">
+                                <a href="/officerent">写字楼出租</a>
+                                <a href="/officesale">写字楼出售</a>
+                            </div>
+                            <a href="/officerent">写字楼</a>
+                        </li>
+                        <li class="clk">
+                            <div class="tnav" style="display: none">
+                                <a href="/agentrent">经纪人出租</a>
+                                <a href="/agentsale">经纪人出售</a>
+                            </div>
+                            <a href="/agentrent">经纪人</a>
+                        </li>
+						<li class="cll"><a href="/shangwuzhongxin">商务中心</a></li>
+                        <li class="clk"><a href="/chuangyiyuanqu">创意园区</a></li>
+                        <li class="clk"><a href="/buildlist">楼盘</a></li>
+                        <li class="clk"><a href="/newsystembuildinfo/newbuildlist">新盘</a></li>
+                        <li class="clk"><a href="/quickrelease">业主委托</a></li>
+                        <li class="clk"><a target="_blank" href="http://www.360dibiao.com/bbs">论&nbsp;&nbsp;坛</a></li>
+                        <li class="clk"><a target="_blank" href="/map">地图看房</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search">
+    <div class="sctit">
+        <form method="post" id="headSearchForm" action="/site/officeheadsearch" onsubmit="changeValue('submit')">
+            <input class="txt_1" onfocus="changeValue(&#039;on&#039;)" onblur="changeValue(&#039;out&#039;)" id="searchkwords" name="kwords" type="text" value="请输入商务中心名称" />            <input type="hidden" name="type" id="form_type" value="2" />
+            <input type="hidden" name="url" value="businesscenter/list" />
+            <input type="submit" class="btn_1" value="" />
+        </form>
+    </div>
+    <div class="portlet" id="yw0">
+<div class="portlet-content">
+<div class="scclick"><em>搜房条件:</em>
+        [<span style="color:#22468B;"> 无 </span>]</div>
+        
+<input id="condition" type="hidden" value="%5B%5D">
+<input id="officeType" type="hidden" value="0">
+<input id="rentorsell" type="hidden" value="0">
+<script type="text/javascript">
+    $(function(){
+        $("#kwords").val("");
+    });
+    var saveState = true;
+    function saveCondition(){
+        if(saveState){
+            var condition = $("#condition").val();
+            var officeType = $("#officeType").val();
+            var rentorsell = $("#rentorsell").val();
+            $.ajax({
+                type: "POST",
+                url: "/findcondition/ajaxAddCondition",
+                data: {condition:condition,officeType:officeType,rentorsell:rentorsell},
+                success: function(result){
+                    if(result==1){
+                        alert("只有个人用户才能保存！");
+                    }else if(result==3){
+                        saveState = false;
+                        alert("保存条件成功");
+                    }else if(result==4){
+                        alert("请先登录!");
+                    }else{
+                        alert("保存失败");
+                    }
+                }
+            });
+        }else{
+            alert("该条件已经保存");
+        }
+    }
+</script>
+</div>
+</div><div class="portlet" id="yw1">
+<div class="portlet-content">
+<div class="srline"><em>区域：</em><a class="srclk">不限</a><a href="/shangwuzhongxin/district48">浦东</a> <a href="/shangwuzhongxin/district38">徐汇</a> <a href="/shangwuzhongxin/district41">普陀</a> <a href="/shangwuzhongxin/district39">长宁</a> <a href="/shangwuzhongxin/district40">静安</a> <a href="/shangwuzhongxin/district36">黄浦</a> <a href="/shangwuzhongxin/district37">卢湾</a> <a href="/shangwuzhongxin/district43">虹口</a> <a href="/shangwuzhongxin/district42">闸北</a> <a href="/shangwuzhongxin/district45">闵行</a> <a href="/shangwuzhongxin/district44">杨浦</a> <a href="/shangwuzhongxin/district46">宝山</a> <a href="/shangwuzhongxin/district50">松江</a> <a href="/shangwuzhongxin/district47">嘉定</a> <a href="/shangwuzhongxin/district51">青浦</a> <a href="/shangwuzhongxin/district53">奉贤</a> <a href="/shangwuzhongxin/district49">金山</a> <a href="/shangwuzhongxin/district54">崇明县</a> <a href="/shangwuzhongxin/district244">上海周边</a> </div><div class="srline"><em>租金：</em><a class="srclk">不限</a><a href="/shangwuzhongxin/rbPrice92">3000以下</a> <a href="/shangwuzhongxin/rbPrice93">3000-6000</a> <a href="/shangwuzhongxin/rbPrice94">6000-10000</a> <a href="/shangwuzhongxin/rbPrice95">10000-15000</a> <a href="/shangwuzhongxin/rbPrice96">150000-20000</a> <a href="/shangwuzhongxin/rbPrice97">20000 以上</a> <input type="text" value="" class="txt_2" name="rbPricea" onblur="searchMenuInputCheck(this)" onfocus="searchShowInputButton(this)"><span class="heng">-</span><input type="text" value="" class="txt_2" name="rbPriceb" onblur="searchMenuInputCheck(this)" onfocus="searchShowInputButton(this)"><font class='heng' >租金(元/工位·月)</font><input type="button"  value="确定" style="float:left;display:none" onclick="searchMenuInput(this,'/shangwuzhongxin/')"></div></div>
+</div></div>
+<div class="scmain">
+    <div class="scleft">
+        <div class="schtit">
+            <div class="schtlt">
+                <div class="sch_1">排序：</div>
+                <div class="sch_2">
+                    <div class="scmoren listbg">
+                        <h5>默认排序</h5>
+                        <div class="ul" style="display:none">
+                            <p><a href="/shangwuzhongxin">默认排序</a></p>
+                            <p><a href="/shangwuzhongxin/orderzu">租金由低到高</a></p>
+                            <p><a href="/shangwuzhongxin/orderzd">租金由高到低</a></p>
+                            <p><a href="/shangwuzhongxin/orderju">竣工时间由旧到新</a></p>
+                            <p><a href="/shangwuzhongxin/orderjd">竣工时间由新到旧</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sch_2">
+                    <div class="zjpaixu" style="width:50px;">
+                        <a class="listbg mren" href="/shangwuzhongxin/orderzu">租金</a>
+                    </div>
+                </div>
+                <div class="sch_2">
+                    <div class="zjpaixu" style="width:72px;">
+                                                <a href="/shangwuzhongxin/orderju" class="listbg jmren">竣工年月</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="schtpage">
+                 <ul style="float:right" class="dibiaoPage" id="yw2"><li class="previous hidden"><a href="#">上一页</a></li>
+<li class="page">&nbsp;1</li><li class="page">/</li><li class="page">6&nbsp;</li>
+<li class="next"><a href="/shangwuzhongxin/page/2">下一页</a></li></ul>            </div>
+        </div>
+
+     <div class="schcont">
+		<div class="schdes">
+			<div class="cypic"><a href="/business/359.html" target="_blank"><img src="http://35upload.360dibiao.com/indoorpic/2012/0228/133042473349_large.jpg" /></a></div>
+			<div class="sp_txt">
+				<h2><a href="/business/359.html" target="_blank">新华联大厦商务中心</a></h2>
+				<p>[ 卢湾 ]&nbsp;&nbsp;&nbsp;淮海中路755号</p>
+				<p>临街商铺（1-2层）</p>
+				<p>餐饮行业，经营中<em>24000</em>元/平米</p>
+				<p>咨询热线：<code>400-820-9181</code> 王峰</p>
+			</div>
+			<div class="sp_sell"><em>24000</em>平米</div>
+			<div class="sp_sell"><em>24000</em>万元</div>
+		</div>
+	</div>	
+	<div class="schcont">
+		<div class="schdes">
+			<div class="cypic"><a href="/business/359.html" target="_blank"><img src="http://35upload.360dibiao.com/indoorpic/2012/0228/133042473349_large.jpg" /></a></div>
+			<div class="sp_txt">
+				<h2><a href="/business/359.html" target="_blank">新华联大厦商务中心</a></h2>
+				<p>[ 卢湾 ]&nbsp;&nbsp;&nbsp;淮海中路755号</p>
+				<p>临街商铺（1-2层）</p>
+				<p>餐饮行业，经营中<em>24000</em>元/平米</p>
+				<p>咨询热线：<code>400-820-9181</code> 王峰</p>
+			</div>
+			<div class="sp_sell"><em>24000</em>平米</div>
+			<div class="sp_sell"><em>24000</em>万元</div>
+		</div>
+	</div>	
+	<div class="schcont">
+		<div class="schdes">
+			<div class="cypic"><a href="/business/359.html" target="_blank"><img src="http://35upload.360dibiao.com/indoorpic/2012/0228/133042473349_large.jpg" /></a></div>
+			<div class="sp_txt">
+				<h2><a href="/business/359.html" target="_blank">新华联大厦商务中心</a></h2>
+				<p>[ 卢湾 ]&nbsp;&nbsp;&nbsp;淮海中路755号</p>
+				<p>临街商铺（1-2层）</p>
+				<p>餐饮行业，经营中<em>24000</em>元/平米</p>
+				<p>咨询热线：<code>400-820-9181</code> 王峰</p>
+			</div>
+			<div class="sp_sell"><em>24000</em>平米</div>
+			<div class="sp_sell"><em>24000</em>万元</div>
+		</div>
+	</div>	     
+  </div>
+</div>
+  <div class="ggrihgt">
+                        <div class="allbd" id="allbd" >
+                            <h5><em style="line-height:24px;width:100%">没有合适的房源？</em></h5>
+                            <div>
+                <form onSubmit="return false;" id="Quickrequire-form" action="/quickrequire/addrequire" method="post"><textarea id="user_require" style="color: rgb(153, 153, 153);" title="请在这里写下您的寻租需求，我们将在1个工作日内与您联系。（例如，黄浦区，近地铁，6块之内）" maxlength="300" name="Quickrequire[qrq_require]">请在这里写下您的寻租或投资需求，我们将在一个工作日之内与您联系。（如：浦东新区 小陆家嘴附近 8块以下 高层）</textarea>                            <div class="soh" id="soh" style="display:none">
+                    <input id="user_name" style="color: rgb(153, 153, 153)" title="请输入您的姓名" value="请输入您的姓名" name="Quickrequire[qrq_name]" type="text" maxlength="100" /><br/><input id="user_tel" style="color: rgb(153, 153, 153)" title="请输入您的联系方式" value="请输入您的联系方式" name="Quickrequire[qrq_tel]" type="text" maxlength="20" /><br/><input id="user_email" style="color: rgb(153, 153, 153)" title="请输入您的邮箱" value="请输入您的邮箱" name="Quickrequire[qrq_email]" type="text" maxlength="30" /><br/>                        </div>
+                        <div class="tjxq" id="tjxq"style="display:none">
+                    <input onclick="addRequire()" style="background:url(/images/tjxq.png) no-repeat;width:90px;height:24px" name="yt0" type="button" value="" />                            <em>我们将尽快与您联系。</em>
+                        </div>
+                    </div>
+                </div>
+
+        </form>
+<div class="pk" style="display: none">
+    <div><img src="/images/pktit.jpg" /></div>
+    <div class="pkmain">
+        <h2><a href="javascript:void(0)">删除全部</a>商务中心</h2>
+        <div class="pkmcont"></div>
+        <div class="pkbot"><a href="javascript:voie(0)"><img src="/images/btnpk.jpg" id="pkbtn" /></a></div>
+    </div>
+    <div><img src="/images/pkbot.jpg" /></div>
+</div>
+</div>
+<div class="Tip" id="tipbox" style="background: #F6F6F7;position:fixed;left:45%;top:45%;width:200px;border: 1px #CCC solid;display: none;text-align: center;line-height: 22px;padding: 15px 10px;color: #222;font-size: 14px;"></div>
+
+<script type="text/javascript">
+    function changeValue(type){
+        var obj = $("#headSearchForm input:[name='kwords']");
+        if($(obj).val()=="请输入商务中心名称"&&type=="on"){
+            $(obj).val("");
+        }else if($(obj).val()==""&&type=="out"){
+            $(obj).val("请输入商务中心名称");
+        }else if($(obj).val()=="请输入商务中心名称"&&type=="submit"){
+            $(obj).val("");
+        }
+    }
+    function alertTip(msg){
+        $(".Tip").html(msg);
+        $(".Tip").fadeIn(500,function(){
+            $(".Tip").fadeOut(3000);
+        });
+    }
+    function addRequire(){
+        if(checkUName($("#user_require"),true)&&checkUName($("#user_name"),true)&&checkUName($("#user_tel"),true)){
+            $.ajax({
+                type:"post",
+                url:"/quickrequire/addrequire",
+                data: $("#Quickrequire-form").serialize(),
+                success: function(Msg){
+                    alertTip(Msg);
+                   $("#user_require").val("");
+                   $("#user_name").val("");
+                   $("#user_tel").val("");
+                   $("#user_email").val("");
+                    if(Msg=="您的需求已成功提交，我们会再1个工作日之内联系您，谢谢!"){
+                        document.getElementById("soh").style.display = "none";
+                        document.getElementById("tjxq").style.display = "none";
+                    }
+                }
+            });
+        }else{
+             alertTip("请填写完整您的需求信息、您的姓名以及联系方式")
+        }
+    }
+    function addListener(element, e, fn) {
+        if (element.addEventListener) {
+            element.addEventListener(e, fn, false);
+        } else {
+            element.attachEvent("on" + e, fn);
+        }
+    }
+
+    function checkUName(obj,check){
+        if(obj.val()==""||obj.val()=="请在这里写下您的寻租或投资需求，我们将在一个工作日之内与您联系。（如：浦东新区 小陆家嘴附近 8块以下 高层）"||obj.val()=="请输入您的邮箱"||obj.val()=="请输入您的姓名"||obj.val()=="请输入您的联系方式"){
+                if(check)return false;
+                obj.val("").css("color","black");
+        }
+        return true;
+    }
+    $(document).ready(function(){
+        addListener(document, "click",function(evt) {
+        var evt = window.event ? window.event: evt,
+        target = evt.srcElement || evt.target;
+        if (target.id == "user_require") {
+            document.getElementById("soh").style.display = "";
+            document.getElementById("tjxq").style.display = "";
+            return;
+        } else {
+            while (target.nodeName.toLowerCase() != "div" && target.nodeName.toLowerCase() != "html") {
+                target = target.parentNode;
+            }
+            if (target.nodeName.toLowerCase() == "html") {
+                document.getElementById("soh").style.display = "none";
+                document.getElementById("tjxq").style.display = "none";
+            }
+        }
+    })
+        $("#user_require").focus(function(){
+             checkUName($("#user_require"),false);
+        })
+        $("#user_name").focus(function(){
+            checkUName($("#user_name"),false);
+        })
+        $("#user_tel").focus(function(){
+            checkUName($("#user_tel"),false);
+        })
+        $("#user_email").focus(function(){
+            checkUName($("#user_email"),false);
+        })
+        
+        $(".schcont .schdes").bind("mouseenter", function(){
+            $(this).find(".schtan").css("display","block");
+        }).bind("mouseleave", "", function(){
+            $(this).find(".schtan").css("display","none");
+        });
+        
+        $(".schcont .schtan").bind("mouseenter", function(){
+            $(this).find(".swdcont").css("display","block");
+        }).bind("mouseleave", "", function(){
+            $(this).find(".swdcont").css("display","none");
+        });
+        //排序
+        $(".scmain .sch_2").eq(0).bind("mouseenter",function(){
+            $(this).find(".ul").css("display","block");
+        }).bind("mouseleave","",function(){
+            $(this).find(".ul").css("display","none");
+        });
+        
+        //比较
+        $.pk.pkcheck_Init("business_index","元/工位•月","/business/tmp.html","/businesscenter/compare");
+        $(".schcont .schpk input:checkbox").bind("change",function(){//点击选择框
+            $.pk.pkcheck_onclick(this,$(this).val(),$(this).attr("attrname"),$(this).attr("attrprice"));
+        })
+        $(".pk a").eq(0).bind("click",function(){//删除全部
+            $.pk.removeAllPKItem()
+        })
+        $("#pkbtn").click(function(){
+            $.pk.gotoPkNow();
+        });
+    })
+</script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F579bf00bc2e83979133ed98063c70f99' type='text/javascript'%3E%3C/script%3E"));
+</script>         </div>
+        <div class="foot">
+    <a href="/help">关于我们</a>|<a href="/help/connect">联系我们</a>|<a href="/help/contract">用户协议</a>|<a href="/help/qjtakephoto">全景看房</a>|<script src=" http://s21.cnzz.com/stat.php?id=2986092&web_id=2986092" language="JavaScript"></script>|<a href="http://t.sina.com.cn/360dibiao">新地标新浪微博</a>|<a href="/friendlink/index" target="_blank">友情链接</a>|<a href="/sitemap.html" target="_blank">站点地图</a>
+    <p>客服热线：400-820-9181 邮箱：<a href="#">service@360dibiao.com</a> 虚假信息举报：400-820-9181</p>
+	<p>Copyright   2010 www.360dibiao.com All Rights Rserved <a target="_blank" href="http://www.miibeian.gov.cn" target="_blank">沪ICP备10201522号-3</a></p>
+</div>
+
+                <script type="text/javascript">document.domain="360dibiao.com";</script>
+    <script type="text/javascript" src="/js/pk.js"></script>
+<script type="text/javascript" src="/js/officeHead.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(document).ready(function() {
+jQuery("#searchkwords").legacyautocomplete("/site/ajaxautocomplete",{'minChars':1,'delay':500,'extraParams':{'type':'4'},'max':10,'scrollHeight':200}).result(function(event,item){$("#headSearchForm").submit()});
+});
+/*]]>*/
+</script>
+</body>
+</html>

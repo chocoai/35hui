@@ -1,0 +1,23 @@
+/******************new brow**********************/
+.brow{ width: 260px; clear: both; overflow: hidden; zoom:1; margin-bottom: 10px;}
+.brow .br_cont{ clear: both; border-left: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC; overflow: hidden; zoom:1;}
+.brow .br_cont h6{clear: both; font-size: 14px; font-weight:bold; line-height: 30px; padding: 0 10px 0 45px; margin: 0px; background:url(../images/yun_li.gif) no-repeat 5px;}
+.brow .br_cont ul{}
+.brow .br_cont ul li{clear: both; line-height: 30px;}
+.brow .br_cont .br_01{ float: left; width: 130px; padding-left: 10px;}
+.brow .br_cont .br_01 a{  color: #005BB0;}
+.brow .br_cont .br_02{ float:right; width: 110px; color: #ff0000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

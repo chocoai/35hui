@@ -1,0 +1,17 @@
+.rtitle{background:url(../../images/help/rtitle.gif) repeat-x; border:1px solid #E3E1E1;padding-bottom:20px;  text-align:left; }
+.rtitlefont{background:url(../../images/help/helprtitle.gif) 5px 8px no-repeat; font-size:14px;  padding-left:20px;  font-weight:bold; height:30px; line-height:30px; overflow:hidden;}
+.rtitle ul { font-size: 12px; margin: 0;  padding: 20px 0 0 30px; }
+.rtitle li { background:url(../../images/help/hlistbg.png) no-repeat scroll 0 10px transparent; font-size: 12px; line-height: 24px; list-style: none outside none;padding-left: 10px;color:#016a6e;}
+.company{ position:relative;padding-left:5px; margin-top:8px;}
+.company h2{ color:#22468B; font-size: 12px; font-weight: bold; border-bottom:1px dotted #ccc; line-height: 25px; padding-left: 5px; margin-bottom: 5px;}
+.detail{ line-height: 22px;  margin:0 auto; padding-bottom:15px;}
+.company dl{}
+.company dd{ clear: both; line-height: 22px; padding-left: 10px; color: #22468B;}
+.p_indent{padding:5px 10px;	text-indent:2em;}
+.p_padding{  padding: 10px 10px 10px 40px;}
+.b_head{padding:0 10px; font-weight: bold; line-height: 22px;}
+#footer P {	LINE-HEIGHT:30px;	WIDTH:100%;	COLOR:#006a6e;}
+.qjhr{border-bottom:1px dashed #CCCCCC; width:95%; margin:0 auto; /*background:url(../../images/help/21.gif) no-repeat 23px center;*/}
+.liimgsite{position:relative; top:5px; right:5px;}
+.mlibg{background:url(../../images/help/21.gif) 23px center no-repeat;}
+

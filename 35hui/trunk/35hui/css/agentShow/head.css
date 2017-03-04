@@ -1,0 +1,55 @@
+/*-----------------全局------------------*/
+*{
+margin:0px;
+padding:0px;
+word-break:break-all; 
+}
+body {
+width:1003px;color:#000;font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;background:#FFF; margin:0px auto; text-align:center;        
+/*------added by mingfang 11-1-26-------*/
+}
+
+
+/*----------------全局 End-------------------*/
+<!--#allhead{ width:1003px; margin:0 auto; height:156px; position:relative;}-->
+#allhead{ width:1003px; background: #fff no-repeat 5px 0px; margin:0 auto; height:156px; position:relative;}
+.login{ height:28px; width:1003px; background:#FFF; text-align:left;}
+#lgn_wrap{ width:385px; _width:400px; float:left; margin:4px 0;}   /*-----modified by mingfang11-1-6------*/
+.lgn_ipt{ width:110px; height:18px; border:1px solid #DDD7C1; float:left; margin-left:4px; overflow:hidden;}
+.lgn_ipt .w{ border:1px solid #fff; background-color:#F5F1E5; height:16px; width:46px; text-align:center; color:#555; float:left;}
+.lgn_ipt .ipt{ display:block; border:1px solid #fff; height:16px; width:60px;}
+.lgn_lnk{margin-left:4px; color:#E2E2E2;}
+.lgn_lnk a{color:#949494; text-decoration:none;}
+.shouyezuoshangjiaotable{position:absolute; top:0; right:0px;}
+
+#topmenu{ background:url(../../images/agentShow/topmenubg.gif) transparent repeat-x 0 0; float:right; font:bold 12px/25px "宋体"; color:#fff; width:173px; text-align:center; margin-right:0px;}
+
+#topmenu a{ font:bold 12px/25px "宋体"; color:#fff; text-decoration:none;}
+#searchbar{ margin-left:412px; width:581px;}
+.searchbarmain{ width:566px; height:41px; background:url(../../images/agentShow/searchbarbg.gif) transparent no-repeat 0 0; padding-left:15px;}
+.searchbartab{ height:30px; padding-left:29px; width:552px;}
+.searchbartab .on{ background:url(../../images/agentShow/searchbartabbg.gif) transparent no-repeat 0 0; height:30px; width:68px; position:relative; top:3px; z-index:10; font:bold 12px/30px "宋体"; text-align:center; float:left;}
+.searchbartab .on a{ color:#000; text-decoration:none;}
+.searchbartab .off{ height:30px; width:68px; position:relative; top:3px; z-index:10; font:bold 12px/30px "宋体"; text-align:center; float:left;}
+.searchbartab .off a{ color:#02696E; text-decoration:none;}
+.searchbarinput{ width:336px; height:26px; border:1px solid #D5D5D5; margin-top:6px; font:normal 12px/26px "宋体"; color:#333; margin-right:12px;}
+.searchbarbtn{ background:url(../../images/agentShow/searchbarbtnbg.gif) #fff no-repeat 0 0; height:28px; width:130px; font-weight:bold; color:#000; border:0; margin-left:12px;}
+
+#topnav{ height:37px; margin-top:17px; background:url(../../images/agentShow/topnavbg.gif) transparent repeat-x 0 100%;}
+.topnavtab{ margin-left:342px; height:31px;}
+.topnavtab .on{ background:url(../../images/agentShow/topnavonbg.gif) #fff no-repeat 0 0; width:81px; height:19px; text-align:center; padding-top:12px;  float:left;}
+.topnavtab .on a{ font:bold 14px "宋体"; color:#fff; text-decoration:none;  }
+.topnavtab .off{ height:21px; border-top:1px solid #CED1C0; padding:6px 15px 0 15px; float:left; margin-top:3px; background:url(../../images/agentShow/topnavoffbg.gif) #fff no-repeat 100% 50%;}
+.topnavtab .end{ background:none; padding:6px 10px 0 15px; }
+.topnavtab .navend{ height:28px; width:6px; background:url(../../images/agentShow/topnavoffend.gif) #fff no-repeat 0 0; float:left; margin-top:3px;}
+.topnavtab .off a{  font:normal 14px "宋体"; color:#0B0B0B; text-decoration:none; }
+.wsdianpu{position:absolute; left:35px; top:90px; width:400px; height:60px;}
+.black16px{font-size:16px; font-weight:bold;}
+.dianpuname{margin-left:45px; margin-top:15px;}
+.img_border {
+	padding:3px;
+	border:1px solid #E7E7E7;
+	background:#F7FBFC;
+}
+
+.breadcrumbs{text-align: left;}

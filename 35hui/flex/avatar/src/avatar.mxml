@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600" applicationComplete="init(event)" >
+	
+	<fx:Declarations>
+		<!-- 将非可视元素（例如服务、值对象）放在此处 -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import avatar.AvatarBmd;
+			import avatar.CutAvatar;
+			import avatar.Param;
+			
+			import com.adobe.images.JPGEncoder;
+			
+			import mx.controls.Alert;
+			import mx.core.FlexGlobals;
+			import mx.events.FlexEvent;
+			private var parameter:Object;//参数
+			private var fileRef:FileReference;//选择的文件
+			private var oldHeadLoader:Loader;
+			
+			private var avatarBmd:AvatarBmd;
+			private var cutAvatar:CutAvatar;
+			protected function init(event:FlexEvent):void
+			{
+				var contextMenu:ContextMenu = new ContextMenu();
+				contextMenu.hideBuiltInItems();
+				var contextMenuItem : ContextMenuItem = new ContextMenuItem("360dibiao.com");  
+				contextMenuItem.enabled = false;
+				contextMenu.customItems.push(contextMenuItem);  
+				this.contextMenu = contextMenu;
+				
+				Security.allowDomain("*");
+				Param.setAttributes(FlexGlobals.topLevelApplication.parameters)
+				
+				errorMsg.setStyle('fontSize',12);
+				errorMsg.setStyle('color', 0xDD0000);
+				
+				previewCanvas.width = Param.preview_width+2; 
+				previewCanvas.height = Param.preview_height+2; 
+				
+				previewPicCanvas.width = defaultPreviewPicCanvas.width = Param.preview_width; 
+				previewPicCanvas.height = defaultPreviewPicCanvas.height = Param.preview_height; 
+				
+				allBigPicCanvas.width = (Param.getCanvasMaxSize())[0]+2;
+				allBigPicCanvas.height = (Param.getCanvasMaxSize())[0]+2;
+				
+				bigPicCanvas.width = (Param.getCanvasMaxSize())[0];
+				bigPicCanvas.height = (Param.getCanvasMaxSize())[0];
+				
+				
+				fileRef = new FileReference();
+				fileRef.addEventListener(Event.SELECT, selectFiles);
+				fileRef.addEventListener(Event.COMPLETE, selectFiles);
+				
+				
+				setDefaultPreview();//设置默认右侧预览图片
+				previrwLabel.text = "预览图片，"+previewPicCanvas.width+"px*"+previewPicCanvas.height+"px";
+				
+				var picLoad:PicLoad = new PicLoad();
+				picLoad.width = 200;
+				uploadMsg.addChild(picLoad);
+			}
+			private function setDefaultPreview():void{
+				var lc:LoaderContext = new LoaderContext(true);
+				var oldHeadURLReq:URLRequest = new URLRequest(Param.oldHead); 
+				
+				oldHeadLoader = new Loader();
+				oldHeadLoader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR, defaultError);
+				
+				oldHeadLoader.contentLoaderInfo.addEventListener(Event.COMPLETE, oldHeadComplete);
+				oldHeadLoader.load(oldHeadURLReq,lc);
+				
+				defaultPreviewPicCanvas.rawChildren.addChild(oldHeadLoader);
+			}
+			private function oldHeadComplete(event:Event):void{
+				oldHeadLoader.width = defaultPreviewPicCanvas.width;
+				oldHeadLoader.height = defaultPreviewPicCanvas.height;
+			}
+			
+			private function defaultError(event:Event):void{}
+			/**
+			 * 点击了选择按钮
+			 */
+			protected function clickSelectBtn(event:Event):void{
+				var filters:Array = [];
+				var fileFilter:FileFilter = null;
+				fileFilter = new FileFilter("All files(*.jpg,*.jpeg,*.gif,*.png)", "*.jpg;*.jpeg;*.gif;*.png");
+				filters[filters.length] = fileFilter;
+				fileFilter = new FileFilter("JPEG files(*.jpg,*.jpeg)", "*.jpg;*.jpeg");
+				filters[filters.length] = fileFilter;
+				fileFilter = new FileFilter("GIF files (*.gif)", "*.gif");
+				filters[filters.length] = fileFilter;
+				fileFilter = new FileFilter("PNG files(*.png)", "*.png");
+				filters[filters.length] = fileFilter;
+				fileRef.browse(filters);
+			}
+			/**
+			 * 选择了文件
+			 */
+			protected function selectFiles(event:Event):void{
+				switch(event.type)
+				{
+					case Event.COMPLETE:
+					{
+						while(defaultPicCanvas.rawChildren.numChildren>=1){
+							defaultPicCanvas.rawChildren.removeChildAt(defaultPicCanvas.rawChildren.numChildren-1);
+						}
+						avatarBmd = new AvatarBmd(this.fileRef.data);
+						
+						if(avatarBmd.picValidate){
+							cutAvatar = new CutAvatar(avatarBmd,previewPicCanvas);
+							defaultPicCanvas.rawChildren.addChild(cutAvatar);
+							saveBtnCanUse();
+							defaultBackground.visible = false;
+						}else{
+							saveBtnCanNotUse();
+							errorMsg.text = "您选择的图片有问题，请选择其他图片！";
+							defaultBackground.visible = true;
+						}
+						break;
+					}
+					case Event.SELECT:
+					{
+						bottomCanvas.visible = true;
+						errorMsg.text = "";
+						if(this.fileRef.size>2*1024*1024){//检查大小
+							errorMsg.text = "您选择的图片大于2M，请重新选择！";
+							saveBtnCanNotUse();
+						}else{
+							this.fileRef.load();
+						}
+						break;
+					}
+				}
+			}
+			private function saveBtnCanUse():void{
+				btn_save.enabled = true;
+				btn_save.mouseEnabled = true;
+				btn_save.alpha = 1;
+			}
+			private function saveBtnCanNotUse():void{
+				btn_save.enabled = false;
+				btn_save.mouseEnabled = false;
+				btn_save.alpha = 0.5;
+			}
+			//放大按钮
+			private function bigPic(event:MouseEvent):void{
+				cutAvatar.bigPicMouseDown(event)
+				sldr.value=sldr.value+10
+					if(sldr.value>=sldr.maximum){
+						sldr.value=sldr.maximum;
+					}
+			}
+			//缩小按钮
+			private function smallPic(event:MouseEvent):void{
+				cutAvatar.smallPicMouseDown(event)
+				sldr.value=sldr.value-10;
+
+			}
+			//放大缩小拖动条
+			private function change():void{
+				
+				cutAvatar.changePic(sldr.value);
+				
+			}
+			
+			public function savePic():void{
+				saveBtnCanNotUse();
+				uploadMsg.visible=true;
+				
+				var urlReq:URLRequest = new URLRequest();
+				urlReq.method = URLRequestMethod.POST;
+				urlReq.url = Param.saveUrl;
+				
+				var encoder:JPGEncoder = new JPGEncoder(80);  
+				var bmd:BitmapData = new BitmapData(previewPicCanvas.width,previewPicCanvas.height);  
+				bmd.draw(previewPicCanvas);  
+				var bytes:ByteArray = encoder.encode(bmd);  
+				
+				urlReq.data = bytes;  
+				urlReq.method = URLRequestMethod.POST;  
+				//这个是关键,内容类型必须是下面文件流形式;  
+				urlReq.contentType = "application/octet-stream";  
+				
+				var loader:URLLoader = new URLLoader();           
+				loader.addEventListener(Event.COMPLETE, completeSavePic); 
+				loader.load(urlReq);  
+			}
+			private function cancelProgramm(event:Event) : void
+			{
+				
+				var url:URLRequest = new URLRequest("javascript:window.location.reload(true)");
+				navigateToURL(url, "_self");
+				return;
+			}
+			private function completeSavePic(event:Event):void{
+				if(event.target.data=="success"){
+					Alert.show("保存成功！","",4,null,cancelProgramm);
+				}else{
+					Alert.show(event.target.data,"",4,null,cancelProgramm);
+				}
+			}
+		]]>
+	</fx:Script>
+	<mx:Canvas width="100%" height="100%">
+		<mx:VBox width="95%" height="95%" horizontalCenter="0" verticalCenter="0">
+			<mx:Image source="@Embed('images/selectBtn.png')" x="11" y="20" buttonMode="true" click="clickSelectBtn(event)"></mx:Image>
+			<s:Label x="25" y="65" text="仅支持jgp、gif、png类型的图片，且文件小于2M。" />
+			<mx:Canvas>
+				<s:BorderContainer id="allBigPicCanvas" x="0" y="0">
+					<mx:Canvas id="bigPicCanvas">
+						<mx:Image id="defaultBackground" source="@Embed('images/background.gif')" x="0" y="0"></mx:Image>
+						<mx:Canvas id="defaultPicCanvas" x="0" y="0"></mx:Canvas>
+					</mx:Canvas>
+				</s:BorderContainer>
+				<mx:VBox x="300" y="86">
+					<s:BorderContainer id="previewCanvas">
+						<mx:Canvas id="defaultPreviewPicCanvas" x="0" y="0"></mx:Canvas>
+						<mx:Canvas id="previewPicCanvas" x="0" y="0"></mx:Canvas>
+					</s:BorderContainer>
+					<s:Label  text="" id="previrwLabel"/>
+				</mx:VBox>
+			</mx:Canvas>
+			<mx:Canvas id="bottomCanvas" visible="false">				
+				<mx:Image source="@Embed('images/smallBtn.png')" x="0" y="0" id="btn_small" buttonMode="true" click="smallPic(event)"></mx:Image>
+				<mx:HSlider id="sldr"  x="65" y="0" width="120"  value="100" maximum="195" minimum="50" showTrackHighlight="false" snapInterval="1"  liveDragging="true" change="change()"/>
+				<mx:Image source="@Embed('images/bigBtn.png')" x="185" y="0" id="btn_big" buttonMode="true" click="bigPic(event)"></mx:Image>				
+				<mx:Image source="@Embed('images/saveBtn.png')" x="30" y="30" id="btn_save" buttonMode="true" click="savePic()"></mx:Image>
+				<mx:Image source="@Embed('images/cancelBtn.png')" x="155" y="30" id="btn_cancel" buttonMode="true" click="cancelProgramm(event)"></mx:Image>
+				<mx:SWFLoader id="uploadMsg" x="220" y="25" visible="false"></mx:SWFLoader>
+				<s:Label  text="" x="223" y="30" id="errorMsg"/>
+			</mx:Canvas>
+		</mx:VBox>
+	</mx:Canvas>
+</mx:Application>
+

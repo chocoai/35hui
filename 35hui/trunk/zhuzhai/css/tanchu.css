@@ -1,0 +1,46 @@
+/***********************/
+.tc_survey{  background:#EFEFEF;}
+.tc_survey h2{ clear:both; line-height:30px; height:30px; padding:0 15px; font-weight:bold; font-size:14px; font-family: "microsoft yahei";}
+.tc_survey h2 a{ float:right; display:block; width:21px; height:21px; background:url(../images/close.gif) no-repeat; text-decoration:none; margin-top:5px; margin-right:5px;}
+.tc_survey ul{ padding:0 10px; clear:both;}
+.tc_survey ul li{ clear:both;  overflow:hidden; zoom:1;}
+.tc_survey .tcs_1{ float:left; width:80px; text-align:right; padding-right:10px; font-size:14px; line-height:25px;}
+.tc_survey .tcs_2{ float:left; width:280px; color:#999999; line-height:18px;}
+
+
+/**********email*************/
+.tc_email{background:#EFEFEF;}
+.tc_email h2{ clear:both; line-height:30px; height:30px; padding:0 15px; font-weight:bold; font-size:14px; font-family: "microsoft yahei";}
+.tc_email h2 a{ float:right; display:block; width:21px; height:21px; background:url(../images/close.gif) no-repeat; text-decoration:none; margin-top:5px; margin-right:5px;}
+.tc_email ul{ padding:0 10px; clear:both;}
+.tc_email ul li{ clear:both; padding-top:4px; overflow:hidden; zoom:1;}
+.tc_email .tce_1{ float:left; width:80px; text-align:right; padding-right:10px; line-height:25px; font-size: 14px;}
+.tc_email .tce_2{ float:left; width:280px; line-height:20px; color:#999999;}
+
+/********弹出广告******/
+.tc_ader{ width:350px; height:290px; background:url(../images/tc_bg.gif) no-repeat; padding:5px;}
+.tc_ader_top{ height:65px; clear:both;}
+.tc_ader_top .logo{ height:65px; width:80px; float:left; background:#FFFFFF;}
+.tc_ader_top .lg_tit{ height:65px; width:270px; float:left; position:relative;}
+.tc_close{ position:absolute; top:5px; right:10px; height:16px; width:16px; cursor: pointer;}
+.tc_ader_top .lg_tit p{ clear:both; line-height:35px; height:35px; font-size:16px; font-weight:bold; color:#ffffff; padding-left:10px;}
+.tc_ader_top .lg_tit ul{ clear:both; height:24px; padding-top:6px; background:#FFFFFF;}
+.tc_ader_top .lg_tit ul li{height:24px; width:65px; margin-right:2px; background:url(../images/hui_li.gif) no-repeat; text-align:center; float:left;}
+.tc_ader_top .lg_tit ul li.red_bg{background:url(../images/red_li.gif) no-repeat;}
+.tc_ader_top .lg_tit ul li.red_bg a{ color:#DB153B;}
+.tc_ader_top .lg_tit ul li a{ line-height:24px; display:block; text-decoration:none; color:#333333;}
+
+.tc_ader_cont{ height:220px; background:#FFFFFF; clear:both; padding:0 4px 0 5px;}
+.tc_ader_ct{ border:1px solid #999999; padding:4px 5px;overflow:hidden; zoom:1; width: 329px; clear: both;}
+.tc_ader_ct .tcad_side{ float:left; padding:5px; width:154px; cursor:pointer; }
+
+
+
+
+
+
+
+
+
+
+

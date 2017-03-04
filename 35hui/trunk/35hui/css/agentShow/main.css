@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0;}
+.box{width:1003px; position:relative; margin:0 auto; text-align:center;}
+#head{height:156px; width:1003px; }
+.content{width:1003px; position:relative;}
+.left{width:720px; float:left; display:inline-block; overflow:hidden; text-align:left;}
+.right{width:281px; float:right; position:relative; right:0; _top:-530px; overflow:hidden; display:inline-block; padding-top:10px; text-align:left;}    /*-----modified by mingfang11-1-6------*/
+#footer {
+	WIDTH: 1003px; BACKGROUND: #ffffff; FLOAT: left; HEIGHT: 80px; BORDER-TOP: #cccdd0 1px solid;
+}
+#lj {
+	TEXT-ALIGN: center; WIDTH: 100%; FLOAT: left
+}
+#lj UL {
+	WIDTH: 600px; PADDING-TOP: 20px
+}
+#lj UL LI {
+	LIST-STYLE-TYPE: none; FLOAT: left; LIST-STYLE-IMAGE: none
+}
+#lj UL LI A {
+	COLOR: #313131; TEXT-DECORATION: none
+}
+#footer P {
+	LINE-HEIGHT: 30px; WIDTH: 100%; COLOR: #006a6e
+}
+#lj UL LI A:hover {
+	COLOR: #006a6e
+}
+	
+/*tab选项卡头部*/
+	h1, h2, h3, h4, h5, h6 { font-size:1em; }
+a { color:#333; text-decoration:none; }
+a:hover { text-decoration:underline; }
+ul, li { list-style:none; }
+fieldset, img { border:none; }
+ Hotnews style 
+#hotnews { width:1003px; }
+.tab_header { width:1003px; overflow:hidden; border-bottom:3px solid #99cc33; background:#fefdbd; padding-top:3px;  }
+   .tab_header ul { float:left; margin-left:50px; }
+   #nav{margin-bottom:-3px;}
+    .tab_header ul li { float:left;  width:70px; line-height:25px; text-align:center; cursor:pointer; margin:0 10px;  }
+    .tab_header .normal {  }
+    .tab_header .current{ /*background:#99cc33;*/ background:url(../../images/agentShow/tab.jpg) no-repeat; color:#FFF; margin-bottom:-3px;}
+	
+#hotnews_content { background:#FFF; min-height:400px;
+height:auto !important;
+height:400px; _position:relative; margin:0 auto; text-align:center;}       /*----------added by mingfang 11-1-27------------*/
+   #hotnews_content .normal { display:none; }
+    #hotnews_content .current { display:block; }
+    #hotnews_content ul { padding:8px 0 0 5px; }
+    #hotnews_content ul li a { font-size:14px; }
+li.current a{color:#FFF;}     /*----------added by mingfang 10-11-19-------------*/
+.iptsubmit{background:url(../../images/agentShow/btm.gif) no-repeat; width:78px; height:23px; border:none; cursor:pointer;}
+
+
+.commentsList{background:none repeat scroll 0 0 #EFFBDC;
+border:1px solid #9DC55D;
+margin:32px 0 15px;
+padding:8px;}

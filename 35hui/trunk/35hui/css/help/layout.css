@@ -1,0 +1,8 @@
+*{margin:0px;padding:0px;}
+body {width:1000px;color:#000;font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;background:#FFF; margin:0 auto;}
+.box{width:1000px; position:relative; background:#FFF; margin:0 auto;/*height:50px*/ margin-bottom:20px;}
+.head{width:1000px; height:135px;}
+.container{width:1000px;margin:0 auto; padding-top:8px; margin-bottom:10px;}
+.left{width:200px; float:left; overflow:hidden;}
+.right{width:780px;  float:right;overflow:hidden; _overflow:visible; display:inline;}
+#footer { background: none repeat scroll 0 0 #FFFFFF; border-top: 1px solid #CCCDD0; clear: both; height: 80px; margin-top: 30px; width: 1000px;margin:0 auto;text-align:center;}

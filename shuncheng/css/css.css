@@ -1,0 +1,219 @@
+/*************************loupan search***********************************/
+.search{ clear:both; border:1px solid #DAE6F1; margin-bottom:10px;}
+.search .sctit{ clear:both; height:27px; background:#1C5334; padding:5px 10px;}
+.search .scclick{ background:#E4E144; height:18px; padding:6px 10px; line-height:18px;}
+.search .scclick em{ display:block; float:left; padding-right:5px; line-height:20px; color:#808080;}
+.search .scclick a{ display:block; float:left; padding:1px 18px 1px 8px; border:1px solid #ccc; height:16px; line-height:16px; background:#fff url(../images/close.jpg) no-repeat right 5px; margin-right:10px; color:#7F6228; text-decoration:none;}
+.srline{ clear:both; padding:5px 0 5px 10px; height:24px; line-height:24px;}
+.srline em{ height:24px; width:36px; line-height:24px; display:block; float:left; }
+.heng{ float:left; height:22px; line-height:22px; padding-right:5px;}
+.srline a{  padding:0 9px; line-height:24px; display:block; float:left; color:#7F6228;margin-right:2px;}
+.srline a.srclick{ color:#fff;  background:#22468B; line-height:24px;}
+.srline a.srclk{ color:#FF6600; font-weight:bold; line-height:24px;}
+.stan{ clear:both; padding:3px 10px 3px 44px;}
+.stan p{ clear:both; border:1px solid #DDDDDD;}
+.stan p a{ padding:0 10px; line-height:24px; color:#22468B; }
+.stan p a.srclk{ color:#FF6600; font-weight:bold; line-height:24px;}
+.stan p a.srclick{ color:#fff;  background:#22468B;}
+.stan p a.red_white{ color:#EB6100; }
+.scmain{ clear:both;}
+.scleft{ float:left; width:690px;}
+.scleft .schtit{ clear:both; height:21px; border:1px solid #DAE6F1; background:url(../images/sctitbg.jpg) repeat-x; padding:9px; width:660px;z-index: 999;}
+.scleft .schtit .schtlt{ float:left; width:350px; height:21px;}
+.sch_1{ float:left; height:21px; width:40px; line-height:21px;}
+.sch_2{ float:left; height:21px; margin-right:10px;}
+.scmoren{ height:19px; border:1px solid #ccc; background-position:-78px -59px; width:140px; position:relative;}
+.scmoren .ul{ position:absolute; left:-1px; z-index:999; width:140px; border-left:1px solid #ccc; border-bottom:1px solid #ccc; border-right:1px solid #ccc; background:#FFFFFF;}
+.scmoren .ul p{ height:25px; line-height:25px; clear:both;}
+.scmoren .ul p a{ line-height:25px; display:block; padding-left:5px; text-decoration:none; color:#333;}
+.scmoren .ul p a:hover{ background:#DAE6F1;}
+.scmoren h5{ line-height:19px; padding-left:5px; font-size:12px; font-weight:normal; cursor: pointer;}
+.zjpaixu{ height:19px; border:1px solid #ccc; float: left; background: #fff;}
+.zjpaixu a{ padding:0 18px 0 5px; display:block; height:19px; line-height:19px; color:#333;}
+.dwei{ float: left; font-weight: normal; margin-left: 5px;}
+.zjpaixu a.mren{ background-position:-175px -96px;}
+.zjpaixu a.mrendown{ background-position:-175px -116px;}
+.zjpaixu a.mrenup{ background-position:-175px -136px;}
+.zjpaixu a.jmren{ background-position:-154px -96px;}
+.zjpaixu a.jmrendown{ background-position:-154px -116px;}
+.zjpaixu a.jmrenup{ background-position:-154px -136px;}
+.longren{ background-position:-164px -96px;}
+.longrenup{ background-position:-165px -136px;}
+.longrendown{ background-position:-165px -116px;}
+.scleft .schtit .schtrt{ float:left; width: 140px; }
+.scleft .schtit .schtrt a{ background-position:0px -131px; line-height:21px; padding-left:18px;color:#22468B; display:block; }
+.scleft .schtit .schtpage{ float: right; padding-right: 10px; width: 150px; }
+.scleft .schtit .schtpage ul li{float: left; padding: 0 2px;}
+.scleft .schtit .schtpage ul li.page{padding-top: 3px;}
+.scleft .schtit .schtpage a{  height: 19px; line-height: 19px; padding: 0 5px;}
+
+
+.schcont{ clear:both; padding-top:10px;}
+.schcont .zerocontent{border: 1px solid #E5E5E5;padding: 12px 10px 12px 120px;margin-bottom: 10px;}
+.schcont .zerocontent .sorry_title{font-size: 16px;font-weight: bold;height: 30px;line-height: 30px;width: 96%;}
+.schcont .zerocontent .noresult li{font-size: 12px;font-weight: normal;line-height: 22px;list-style-type: none;}
+.schcont .schdes{ clear:both; height:155px; margin-bottom:10px; background: url(../images/botline.png) no-repeat left bottom;}
+.schcont .schdes .schpic{ float:left; height:152px; width:112px;  }
+/*****.number{ position:absolute; left:1px; top:1px; height:22px; width:18px; text-align:center; line-height:22px; background:#FFFFFF;}******/
+.schcont .schdes .schpic img{ height:140px; width:100px; border:1px solid #DFDFDF; padding:5px;}
+.schcont .schdes .schtxt{ float:left; width:480px; height:152px; margin-left:20px;}
+.schcont .schdes .schtxt h2{ clear:both; height:30px; font-size:14px; font-weight:bold;}
+.schcont .schdes .schtxt h2 a{ line-height:25px; color:#7F6228;}
+.schcont .schdes .schtxt p{ clear:both; height:25px; line-height:25px;}
+.schcont .schdes .schtxt p a{ padding:0 5px;}
+.schcont .schdes .schtxt p em{ color:#FF0000; font-size:18px; font-weight:bold; padding:0 5px 0 0 ; font-family:Arial, Helvetica, sans-serif;}
+.schcont .schdes .schjtxt{ float:left; width:510px; height:152px; margin-left:10px;}
+.schcont .schdes .schjtxt h2{ clear:both; height:20px; font-size:14px; font-weight:bold; line-height:20px; padding: 5px 0;}
+.schcont .schdes .schjtxt h2 span{ float:right;}
+.jjrphone{ background:url(../images/phone.jpg) 0 3px no-repeat; padding-left:18px; font-size:16px; color:#FF7F27; font-weight:bold;}
+.schcont .schdes .schjtxt h2 a{ line-height:20px; color:#22468B; display:block; float: left;}
+.schcont .schdes .schjtxt h2 img{ float: left; height: 18px; width: 18px;}
+.schcont .schdes .schjtxt p{ clear:both; height:30px; line-height:30px;overflow: hidden;}
+.schcont .schdes .schjtxt p a{ padding:0 5px;}
+.schcont .schdes .schjtxt p em{ color:#FF0000; font-size:18px; font-weight:bold; padding:0 5px 0 0 ; font-family:Arial, Helvetica, sans-serif;}
+.scht_1{ float:left; line-height:25px; width: 200px;}
+.scht_2{ float:left; margin-left: 5px;width:270px; line-height:25px;}
+.schcont .schdes .schpk{ width:200px; float:left;}
+.schcont .schdes .schpk .pkt{ clear:both; height:30px; padding-bottom:80px;}
+.schcont .schdes .schpk .pkt em{color:#FF6600; font-size:18px; font-weight:bold; padding:0 5px 0 0 ; font-family:Arial, Helvetica, sans-serif;}
+.schcont .schdes .schpk .zpkt{ clear:both; height:50px; padding-bottom:70px;}
+.schcont .schdes .schpk .zpkt em{color:#FF6600; font-size:18px; font-weight:bold; padding:0 5px 0 0 ; font-family:Arial, Helvetica, sans-serif;}
+.schcont .schdes .schpk .pkb{ clear:both; height:30px;color:#FF6600; padding-top: 13px;}
+.schcont .schdes .schtan{ width:40px; float:right; height:132px; padding:11px 0; }
+.schbord{ background:#f0f0f0; border-left:1px solid #E8E8E8; border-bottom:1px solid #E8E8E8; border-top:1px solid #E8E8E8; height:22px; padding:55px 0 55px 12px; position:relative;}
+.schbord .rtcont{ width:288px; border:1px solid #E8E8E8;background:#f0f0f0; height:457px; position:absolute; left:39px; top:-63px; z-index:999; padding:10px;}
+.schbord .rtcont ul{}
+.schbord .rtcont ul li{ clear: both; height: 25px; background: url("../images/tip.jpg") no-repeat 0 6px; padding-left: 12px;}
+.schbord .rtcont ul li a{ line-height: 25px;}
+.comlogo{ clear:both; height:56px; margin-bottom:12px;}
+.comlogo .logopic{ float:left; height:122px; height:50px; padding:6px 3px;}
+.comlogo .logotxt{ float:right; width:150px;}
+.comlogo .logopic img{ height:116px; height:44px; padding:2px; border:1px solid #ccc;}
+.schbord .rtcont p{ clear:both; line-height:25px; padding-top:4px;}
+.schbord .rtcont p em{ color:#FF6600; font-weight:bold; font-size:24px;}
+.tabcont{  clear:both; width:680px;}
+.gemore{ clear:both; height:24px; width:680px; border-bottom:1px dashed #82A9CD; padding-bottom:5px; padding-top: 5px}
+.gemore span{ cursor: pointer;display:block; float:right; height:22px; border:1px solid #D7D7D7; background:#F2F2F2; padding:0 10px; line-height:22px; color:#333;margin-left: 10px}
+
+/*************************loupan detail***********************************/
+.space{ height:20px; padding:0 0 7px 0; clear:both;}
+.space .lfspace{ float:left; width:750px; height:20px; line-height:20px;}
+.space .lfspace a{ padding:0 2px; line-height:20px; color:#22468B;}
+.space .lfspace em{ padding:0 3px; line-height:20px;}
+.space .rtspace{ float:right; width:200px; height:20px; text-align:right; line-height:20px; color:#7f7f7f;}
+.loutit{ clear:both; height:55px; margin-bottom:1px;}
+.loutit .lflou{ height:55px; float:left; width:560px;}
+.loutit .lflou .title{ clear:both; height:35px; line-height:35px; font-size:24px; font-weight:bold;font-family: 'Microsoft YaHei'; }
+.loutit .lflou .egtit{ clear:both; height:20px; line-height:20px; font-size:12px; font-family:Arial, Helvetica, sans-serif; }
+.loutit .rtlou{ height:25px; float:left; width:430px; padding-top:25px; line-height:25px;}
+.loutit .rtlou li{ padding:0 20px; float: right; height:25px;}
+.loutit .rtlou li a{display:block;  line-height:25px;}
+
+.dlcont{ clear:both; border:1px solid #295095; overflow: hidden;zoom:1; margin-bottom:10px; padding:2px 10px 5px 10px;}
+.dlleft{ float:left; width:452px;}
+.dlleft .dldesc{ clear:both; height:25px; color:#808080; line-height:25px;}
+.dlleft .dldesc a{ float:right; line-height:25px; padding-right:10px;}
+.dlleft h2{ clear:both; line-height:30px; font-size:20px; font-weight:bold; color:#22468B;font-family: 'Microsoft YaHei'; padding:5px 0;}
+.dlleft .dllcont{ background:url(../images/botline.jpg) bottom repeat-x; padding:5px 0 1px 0; margin-bottom: 4px;}
+.dlleft .dllcont p{ clear:both; line-height:25px; }
+.dlleft .dllcont h6{ clear:both; line-height:25px; font-size: 12px; font-weight: normal; padding-left: 5px; background: #EDF4FB; border-bottom: 1px solid #DADADA; color: #22468B;}
+.dll_01{ float:left; width:225px;}
+.dll_01 em{ color:#ff6600; font-size:18px; font-weight:bold; padding-right:5px;}
+.dlleft .hotagent{ clear:both; height:180px;}
+.dlleft .hotagent .hamodel{ float:left; width:101px; height:180px; padding-right:15px;}
+.dlleft .hotagent .hamodel img{ width:97px; padding:1px; height:126px; border:1px solid #ccc;}
+.dlleft .hotagent .hamodel p{ height:20px; line-height:20px; clear:both; padding-top:4px;}
+.dlleft .hotagent .hamodel p em{ color:#FF0000;}
+.dlright{ float:right; width:500px; padding-left:5px;}
+.dlright .dlqj{ clear:both; height:320px; padding-top:8px;}
+.dlright .dltxt{ clear:both;  line-height:25px; text-indent:25px; padding-top:5px; padding-left:5px;}
+.lptit{ clear:both; border-bottom:2px solid #093F65; height:29px;}
+.lptit ul{ float:left; width:700px; height:29px;}
+.lptit ul li{ float:left; height:29px; margin-right:5px; background:#E7F1FA; text-align:center;}
+.lptit ul li a{ line-height:29px; padding:0 18px; display:block; text-decoration:none; color:#333;}
+.lptit ul li.clk{ background:#447A9C; }
+.lptit ul li.clk a{ color:#ffffff;}
+.lptit .wyou{ float:right; width:250px; text-align:right;}
+.detcont{ clear:both;}
+.detcont h1{ clear:both; height:20px; line-height: 20px; padding:10px 1px 15px 1px; font-weight:bold; font-size: 16px;}
+.detcont .detitl{ clear:both; height:32px;  margin-bottom:5px; padding-top: 5px;}
+.detcont .detitl .detlf{ float:left; height:32px; width:320px; line-height:32px; font-size:14px;}
+.detcont .detitl .detlf em{ color:#FF0000; padding:0 3px;}
+.detcont .detitl .detrt{ float:right; height:24px; padding:4px 0; line-height:24px; width:670px;}
+.det_01{ float:right; padding:0 5px; line-height:24px;}
+.detcont .dllcont{ clear:both;}
+.dlmoren{ height:20px; border:1px solid #ccc; background-position:-128px -58px; width:90px; position:relative;}
+.dlmoren .ul{ position:absolute; left:-1px; top:21px;  width:90px; border-left:1px solid #ccc; border-bottom:1px solid #ccc; border-right:1px solid #ccc; background:#FFFFFF;}
+.dlmoren .ul p{ height:25px; line-height:25px; clear:both; cursor: pointer;}
+.dlmoren .ul p a{ line-height:25px; display:block; padding-left:5px; text-decoration:none; color:#333;}
+.dlmoren .ul p a:hover{ background:#DAE6F1;}
+.dlmoren h5{ line-height:19px; padding-left:5px; font-size:12px; font-weight:normal; cursor: pointer;}
+.dlpage{}
+.dlpage li{ float: left; padding: 0 2px;}
+.dlpage em{ float:left; display:block; height:24px; line-height:24px;  padding:0 10px;}
+.dlpage a{ float:left; display:block; height:24px; line-height:24px; width:40px; text-align:center;}
+.dltype{ height:20px; border:1px solid #ccc; background-position:-160px -58px; width:58px; position:relative;}
+.dltype .ul{ position:absolute; left:-1px; top:21px;  width:58px; border-left:1px solid #ccc; border-bottom:1px solid #ccc; border-right:1px solid #ccc; background:#FFFFFF;}
+.dltype .ul p{ height:25px; line-height:25px; clear:both;}
+.dltype .ul p a{ line-height:25px; display:block;  text-decoration:none; color:#333; font-weight: normal;}
+.dltype .ul p a:hover{ background:#DAE6F1;}
+.dltype h5{ line-height:19px; padding-left:5px; font-size:12px; font-weight:normal; text-align:left;}
+.dltype h6{ line-height:19px; padding-left:5px; font-size:12px; font-weight:normal; text-align:left;}
+.dlmain{ clear:both;zoom:1;}
+.dlmain .dlleft{ float:left; width:725px;}
+.dlmain .dlright{ float:right; width:260px; padding-top:30px;}
+.dlmain .dlright .pkcont{ clear:both; border:1px solid #ccc; padding:5px;}
+.dlmain .dlright .pkcont h2{ clear:both; padding-bottom:2px; line-height:25px; font-size:14px; font-weight:bold; border-bottom:1px solid #ccc;}
+.addpk{ clear:both; padding:10px 5px;}
+.addpkbtn{ clear:both; padding:5px; text-align:center;}
+.dlmtit{ clear:both; border-bottom:1px solid #447A9C; height:30px; margin-bottom:10px;}
+.dlmtit ul{ float:left; width:500px; height:30px;}
+.dlmtit ul li{ float:left; height:30px; margin-right:5px; background:#E7F1FA; text-align:center;}
+.dlmtit ul li a{ line-height:30px; padding:0 18px; display:block; text-decoration:none; color:#333;}
+.dlmtit ul li.clk{ background:#447A9C; }
+.dlmtit ul li.clk a{ color:#ffffff;}
+.dlmtit .dlmore{ float:right; width:100px; text-align:right; height:30px; line-height: 30px;}
+.left_map{ clear:both; margin-bottom:10px; border:1px solid #e4e4e4; height:270px; padding:1px;}
+.left_map .map_show{ float:left; width:605px; height:270px; padding-right:1px;}
+.left_map .map_nav{ background: none repeat scroll 0 0 #F7F7F7; border-left: 1px solid #E4E4E4; float: right;  height: 270px; position: relative; width: 113px;}
+.left_map .map_nav ul { left: 7px; position: absolute; top: 5px;}
+.left_map .map_nav li { height: 43px;width: 116px;}
+.left_map .map_nav .ico_shop { background-position: 10px -94px;}
+.left_map .map_nav a { color: #000000; display: block; line-height: 43px; padding-left: 45px;}
+.left_map .map_nav li.curr {background-position: 0 -358px;}
+.left_map .map_nav .ico_bank {  background-position: 10px -136px;}
+.left_map .map_nav .ico_dining {background-position: 10px -178px;}
+.left_map .map_nav .ico_hotel { background-position: 10px -220px;}
+.left_map .map_nav .ico_park { background-position: 10px -262px;}
+.left_map .map_nav .ico_store { background-position: 10px -304px;}
+.left_traffic { clear:both; height:160px;}
+.left_traffic dl { float: left; min-height: 48px; width: 350px;}
+.left_traffic .ico_metro { background-position: 0 -421px;}
+.left_traffic dt { display: inline; float: left; height: 30px; margin: 5px 10px; text-indent: -9999px; width: 29px;}
+.left_traffic dd { line-height: 22px; margin-left: 50px; margin-top: 4px;}
+.left_traffic .ico_elevated { background-position: -78px -421px;}
+.left_traffic .ico_airport {background-position: -117px -421px;}
+.left_traffic .ico_bus { background-position: -39px -421px;}
+.left_traffic .ico_railway {background-position: 0 -461px;}
+.gzlou{ clear:both;}
+.gzmodel{ float:left; width:130px; padding:0 6px;}
+.gzmodel img{ width:115px; padding:1px; height:148px; border:1px solid #ccc; margin-left: 8px;}
+.gzmodel p{ height:20px; line-height:20px; clear:both; padding-top:4px; text-align:center; overflow: hidden;}
+.gzmodel p em{ color:#FF0000;}
+.alltraffice{ clear:both; height:475px; margin-bottom: 8px;}
+
+/*************************************************************************************shang wu *********************************************************************************************/
+.swucont{ clear:both; border:1px solid #295095; overflow: hidden; zoom:1; margin-bottom:10px; padding:5px;}
+.swucont .swleft{ float:left; width:450px;}
+.swucont .swleft p{ clear:both; height:20px; line-height:20px; font-size:14px; padding:5px 0 5px 10px;}
+.swucont .swleft p em{  color:#ff6600; font-size:22px; font-weight:bold; padding-right:5px;}
+.swucont .swright{ float:right; width:500px; padding-left:5px;}
+.dll_02{ float:left; width:230px; line-height:20px;}
+.swucont .swleft .swkf{ clear:both; height:60px; background:url(../images/phone1.jpg) no-repeat 10px 20px; padding:20px 5px;}
+.swucont .swleft .swkf .swkf_l{ float:left; width:210px; padding-left:90px; line-height:30px;}
+.swucont .swleft .swkf .swkf_r{ float:right; width:140px; height:32px; padding-top:14px;}
+.swucont .swleft .swdet{ clear:both; line-height:22px; padding-left:10px; width:465px;}
+.swdetail{ clear:both; padding:10px 5px;}
+.swdetail p{ clear:both; padding:5px 0; overflow:hidden;}
+.swdetail p em{color:#22468B;}
+.sdt_01{ float:left; line-height:28px; width:230px; font-size: 12px; background:url(../images/swtip.jpg) no-repeat 0 14px; padding-left: 8px;}

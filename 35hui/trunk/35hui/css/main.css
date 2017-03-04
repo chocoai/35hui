@@ -1,0 +1,47 @@
+*{margin:0px;padding:0px;}
+img{border:none;}
+ol{list-style-type:none;}
+textarea{font-size:12px;}
+body {color:#000;font:12px/1.5 tahoma,arial,\5b8b\4f53,sans-serif;background:#FFFFFF;margin:0px auto;}
+a:link {	color:#323232; text-decoration:none;}
+a:visited {	color:#323232; text-decoration:none;}
+a:hover {	color:#FF6600;text-decoration:underline;}
+.clearfix{zoom:1; margin:0 auto; position:relative; vertical-align:top; clear:both;}
+.clearfix:after{content:'\20';display:block;height:0;clear:both;}
+.clear{clear:both;}
+.clearbox{clear:both;width:100%;}
+.hidden{display:none;}
+.nohidden{display:block;}
+.bodybox {float:left;width:100%;background:#fff;}
+.headertop{background:url(../images/top_bg.jpg) repeat-x;height:30px;line-height:32px;overflow:hidden;padding-left:18px;}
+.headerbottom{background:url(../images/top_bottom.jpg) repeat-x;height:98px;overflow:hidden;}
+.headerbottom img{float:left;margin:10px 0px 0px 41px;display:inline;}
+.headerbottom p{float:right;width:373px;background:url(../images/serachbg.jpg) no-repeat left bottom;padding:42px 0px 0px 145px;height:56px;overflow:hidden;}
+.headerbottom select{vertical-align:middle;}
+.headerbottom input{vertical-align:middle;}
+.head_text{width:150px;height:18px;line-height:18px;overflow:hidden;vertical-align:middle;}
+.footer{border-top:1px solid #CDCCD1;margin-top:25px;padding-top:15px;height:100px;text-align:center;line-height:24px; clear:both;}
+.footer a{margin:0px 8px;}
+.footer p{color:#02696E;}
+.footer p a:link {	color:#02696E; text-decoration:none;}
+.footer p a:visited {	color:#02696E; text-decoration:none;}
+.footer p a:hover {	color:#E60002;text-decoration:underline;}
+.bodyad{clear:both;width:100%;padding-top:9px;text-align:center;}
+.bodyad img{vertical-align:middle;border:1px solid #000002;}
+/*-----------*/
+#largeImg {	border: solid 1px #ccc;	width: 614px;	height: 365px;	padding: 5px;	margin:20px 0px 20px 0px;}
+.thumbs { margin-left:30px;}
+.thumbs img {	border: solid 1px #ccc;	width: 128px;	height: 76px;	padding: 4px; margin:8px;}
+.thumbs img:hover {	border-color: #FF9900;}
+
+#pmt , #pmtbtn{ text-align:center; margin:20px; }
+#pmtbtn a{ margin:0 10px;}
+
+
+/*---------added by mingfang 10-11-22---------*/
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { .threeline_boxleft{float: left; width: 721px; background-color: white;} }
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { .serach_rightbox{float: right; width: 265px; background-color: white; vertical-align: top; position:absolute; right: 0; top: -380px;} }
+@-moz-document url-prefix(){ .threeline_boxleft{padding-top:10px;}} 
+@-moz-document url-prefix(){ .serach_rightbox{margin-left:5px;}} 
+
+

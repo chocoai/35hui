@@ -1,0 +1,73 @@
+body{font-size:12px; width:100%; margin:0 auto; text-align:center; background:url(../images/tbg.png) repeat-x;}
+#wrap{width:1024px; margin:0 auto; text-align:center; position:relative; background:url(../images/zj_03.jpg) repeat-y;}
+#box{position:relative;}
+#head{background:url(../images/zj_01.jpg) no-repeat; vertical-align:top; height:364px;}
+#main{width:1024px; text-align:left; height:auto!important; height:600px; min-height:600px; background:url(../images/zj_03.jpg) repeat-y;}
+
+#right{width:751px; float:right; padding-left:29px; text-align:left;}
+#left{width:214px; float:left; padding-left:29px;}
+
+#topmainbg{background:url(../images/zj_02.jpg) no-repeat; vertical-align:top; height:auto!important; height:448px; min-height:908px;}
+#head img{position:absolute;left:59px;	top:22px;}
+#nav{position:absolute; top:20px; right:45px;}
+#leftmenu{float:left; position:relative; top:45px; left:80px; _top:50px;}
+#leftmenu ul{width:100%; padding: 0 ;}
+#leftmenu li{list-style:none; width:100%; float:left; height:30px; line-height:30px; width:200px;}
+#leftmenu li a img{border:0; margin-right:6px;}
+#leftmenu ul li a:link,#leftmenu ul li a:visited{color:#fff; text-decoration:none;}
+#leftmenu ul li a:hover{color:#F60;}
+#leftmenu ul li a.selected{color:#F90;}
+.site{text-align: left; height: 21px; line-height: 21px; padding-left:55px; padding-top:15px; color:#454545;}
+.site a:link, .site a:visited{color:#454545; text-decoration:none;}
+.site a:hover{color:#F60;}
+.name{	position:absolute;top:171px;right:102px;font-size:24px;	font-weight:bold;	color:#429770;	font-family:Tahoma, Geneva, sans-serif;}
+.gsname{color:#0a7a9d;}
+.phone{position:absolute; top:100px; left:-50px; width:185px;}
+.phonenumber{font-size:20px; font-weight:bold; color:#FF6600; text-align:center; margin:0 auto;}
+/*----------left圆角border--------*/
+
+.xtop, .xbottom { background: none repeat scroll 0 0 transparent;  display: block; font-size: 1px;}
+.xb1 {  background: none repeat scroll 0 0 #CCCCCC; margin: 0 3px;}
+.xb2 { border-width: 0 1px;  margin: 0 2px;}
+.xb3 { margin: 0 1px;}
+.xb2, .xb3 { border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC;}
+.xb1, .xb2, .xb3 { display: block; height: 1px;}
+.xb1, .xb2, .xb3 { overflow: hidden;}
+.border { border-left: 1px solid #CCCCCC; border-right: 1px solid #CCCCCC; overflow: hidden;height:auto !important;height:1%;	padding:10px 15px; zoom:1;}
+#hyld{font-family:"Times New Roman", Times, serif; font-size:14px; font-weight:bold; color:#333; text-align:left; float:left;}
+#hyld img{display:block; float:left;}
+.hyld{display:inline-block;float:left; padding-top:4px; padding-left:3px; font-size:20px;}
+
+/*---------right--------*/
+#right h1{border-bottom:1px solid #d2d2d2; width:690px; font-size:16px; color:#2b8972; padding-bottom:6px;}
+.introduct{width:100%;}
+.logo{background:url(../images/imgbggreencorner.gif) no-repeat; width:215px; height:190px; float:left; margin-top:25px;}
+.gsjianjie{float:left; width:380px; float:left; margin-top:25px;}
+.gsjianjie dt{color:#006A6E; font-size:16px; font-weight:bold; margin:10px 0 5px;}
+.gsjianjie dd{height:25px; line-height:25px; margin-left: 4px;}
+.gsjianjie ul,.gsjianjie li{list-style:none;}
+.gsjianjie li{float:left;}
+
+/*--------公告  评论----------*/
+.pinglun,.gonggao{width:690px; clear:both; padding-top:25px;}
+.pinglun p,.gonggao p{padding-right:10px; text-indent:2em; line-height:21px; margin-top:15px; width:690px;}
+.pinglun{_padding-bottom:60px;}
+.gonggao{padding-top:40px;}
+
+/*----------经纪人----------*/
+.jingying{width:690px; margin:10px 0;}
+.jingying ul{}
+.jingying li{list-style:none; float:left; width: 300px;  margin-bottom:20px; border:1px solid #ccc; margin-right:10px;}
+.photo{ width:100px; height:130px; float:left; margin:5px 10px 0px 5px; display:inline; padding-bottom:5px;}
+.photo img{}
+.jianjie{float:left; margin:10px 5px 5px; text-align:left;white-space:180px; }
+.jianjie span{height:20px; line-height:20px;}
+.jianjie span a{color:#0041d9; font-weight:bold; text-decoration:none;}
+.jianjie span a:link, .jianjie span a:visited{color: #0041d9;}
+.jianjie span a:hover{color:#F60;}
+.logintime{color:#7c7c7c;}
+
+.img_border{width: 96px; height: 120px; border:1px solid #ccc;}
+.link_span{padding-left:10px; padding-right:10px;}
+.link_span a{color:#666666;}
+.copyright{height:22px; line-height:22px; color:#666; padding-left:14px; text-align:center;}

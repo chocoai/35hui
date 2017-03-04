@@ -1,0 +1,27 @@
+.quick-content{background: url(http://rsh.fangyou.com/images/reg/inbox-bg.png) no-repeat 0px 0px;margin: 10px auto 0px;overflow: hidden;padding: 0px 86px;width: 750px;clear:both;}
+.pnreg-char{line-height: 22px;padding-top: 40px;position: relative;width: 750px;}
+.pnreg-char dt{font-size: 14px;font-weight: 700;}
+.info_title{color:red;text-align:center;}
+.pnreg-char dd em.highlight{color: #C00;font-weight: 700;font-style: normal;}
+.pnreg-char dd em{color: #36C;font-weight: 700;font-style: normal;}
+.pnreg-form{margin-top: 20px;}
+.pnreg-tit{background-position: 0px -163px;background-repeat: repeat-x;height: 34px;line-height: 34px;background-color:#d3e9ee;}
+.pnreg-form li.field, .page-pop li.field{ border-top: 1px solid #EDEDED;height: 39px;line-height: 1.5;position: relative;}
+.pnreg-form li.field .input, .page-pop li.field .input{float: left;margin-top: 8px;vertical-align: top;}
+.pnreg-form li.field label, .page-pop li.field label{color: #333;float: left;font-weight: 700;margin-top: 3px;padding-left: 38px;width: 128px;}
+.pnreg-form li.field input.p_field, .page-pop li.field input.p_field{border: 1px solid #CCC;height: 16px;padding: 4px 2px 0px;width: 150px;}
+.pnreg-form li.field label i{color: red;font-family: simsun;font-style: normal;font-weight: 400;left: 28px;position: absolute;top: 10px;}
+.pnreg-form .submit-field .btn-submit{background-position: 0px -197px;height: 35px;width: 209px;}
+.pnreg-tit h2{background-position: 0px -129px;color: white;float: left;font-size: 14px;font-weight: 700;text-align: center;width: 151px;background-color:#08757a;}
+.pnreg-tit span{color: red;margin-left: 15px;}
+.pnreg-form li.txt-field{height: 200px;}
+.pnreg-form .submit-field{border-top: 2px solid #CCC;margin: 3px 0px 28px;padding-top: 28px;text-align: center;}
+.btn-submit{border: 0px;color: white;cursor: pointer;font-size: 14px;font-weight: 700;text-indent: 8px;background-color:#08757a;}
+.pnreg-form .submit-field p{color: red;margin-bottom: 12px;}
+.xiezilou_leftboxone{}
+.xiezilou_leftultwo{border-left :1px solid #edf0f5;padding-left:40px;}
+.xiezilou_leftulone{ height:250px;}
+.xiezilou_leftulone li.two span{color: #026F72;}
+.xiezilou_leftulone li.two{text-align:center;}
+.xiezilou_leftulone li.one{text-align:center;}
+.info_detail{margin-top:10px;margin-left:20px;float: left;padding-left: 50px;width: 420px;word-wrap: break-word;}

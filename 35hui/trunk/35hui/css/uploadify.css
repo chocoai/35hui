@@ -1,0 +1,5 @@
+﻿.uploadifyQueueItem {	BORDER-BOTTOM: #e5e5e5 2px solid; BORDER-LEFT: #e5e5e5 2px solid; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: #f5f5f5; MARGIN-TOP: 5px; PADDING-LEFT: 10px; WIDTH: 350px; PADDING-RIGHT: 10px; FONT: 11px Verdana, Geneva, sans-serif; BORDER-TOP: #e5e5e5 2px solid; BORDER-RIGHT: #e5e5e5 2px solid; PADDING-TOP: 10px}
+.uploadifyError {BORDER-BOTTOM: #fbcbbc 2px solid; BORDER-LEFT: #fbcbbc 2px solid; BACKGROUND-COLOR: #fde5dd !important; BORDER-TOP: #fbcbbc 2px solid; BORDER-RIGHT: #fbcbbc 2px solid}
+.uploadifyQueueItem .cancel {FLOAT: right}
+.uploadifyProgress {BORDER-BOTTOM: #c5c5c5 1px solid; BORDER-LEFT: #808080 1px solid; BACKGROUND-COLOR: #ffffff; MARGIN-TOP: 10px; WIDTH: 100%; BORDER-TOP: #808080 1px solid; BORDER-RIGHT: #c5c5c5 1px solid}
+.uploadifyProgressBar {	BACKGROUND-COLOR: #0099ff; WIDTH: 1px; HEIGHT: 3px}

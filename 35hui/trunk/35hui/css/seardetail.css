@@ -1,0 +1,15 @@
+.sstj, .detail {border-left: 1px solid #EBEBEB;	border-right: 1px solid #EBEBEB;	border:1px solid #EBEBEB;	width:1000px;	_width:998px;}
+.sstj{border-bottom:none;}
+/*-------modified by mingfang 11-1-12----------*/
+/*-------start----------*/
+.detail{_margin-bottom:10px; border-top:0;}
+.detail dl {border: 1px solid #EBEBEB;width:999px;	_width:998px; overflow:hidden;	*border-left:0; *border-right:0;_border-left:0; _border-right:0;margin-top:0;	padding-top:0;_margin-top:1px;}
+/*-------end----------*/
+.findpropcond {	background:#F5F6F8;}
+.PropCond {	*+border-bottom: 1px solid #EBEBEB;	padding: 7px 0 6px 14px;_width:708px;}
+.newpropcond {    height: 20px;	margin-left: 0;	padding: 0 5px 0 5px;}
+.PropCond .savepropcond {	height: 16px;	margin: 0 10px 0 0;	padding: 2px 6px 2px 10px;  background: url(../images/addpic.gif) no-repeat 5px 0; color: #0041D9;}
+.PropCond .savepropcond .propcondicon {	background:url(../images/icon_120x83.gif) no-repeat scroll 0 -58px transparent;	padding-left: 12px;}
+.condition_link2_def {	margin-top: 0;}
+.condition_links2 div {	color: #0041D9;	font-size: 12px;	line-height: 25px;}
+.condition_links2 div.container {	margin-left: 55px;}

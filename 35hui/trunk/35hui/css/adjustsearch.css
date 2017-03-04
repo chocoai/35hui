@@ -1,0 +1,27 @@
+#two_left {padding-top:3px;position:relative; }
+#two_right {padding-top:12px;}
+.threeline_boxleft{padding-top:10px;}
+.serach_lefttwobox{width:713px;}
+.search_save{color: #333;height: 25px;line-height: 25px;padding-top: 8px;margin-bottom: 8px;clear:both;}
+.serach_rightbox{margin-left:5px;}
+.threeline_boxleftone dt {float: left;margin-top: 10px;padding-left:14px;width: 690px;padding-bottom:2px;}
+.threeline_boxleftone dd {float: left;margin-top: 6px;margin-left: 14px;width: 690px;display:inline;}
+.clearfix:after {clear: both;content: ' ';display: block;height: 0px;}
+.threeline_boxleftone dd a:link {color: #323232;text-decoration: none;}
+a.red_white {color:#EB6100; text-decoration:none; font-weight:bold; text-align:center;	height:18px; line-height:18px; display:block; padding-left:3px;	padding-right:3px;}
+.right_align{padding:2px;border:0px solid red;vertical-align: middle;}
+li.two{margin-left:20px;}
+li.three{margin-left:40px;}
+li.four{margin-left:20px;}
+li.ulthreefour{margin-left:60px; padding-top:28px; }
+li.ulthreethree{margin-left:20px;padding-top: 42px;}
+.show_price{font-family: Tahoma, Arial;font-size: 18px;font-weight: bolder;color:#cc0000;}
+.show_area{color:black;}
+
+/*------------------added by mingfang  10-11-17   楼盘搜索--------------------------------*/
+
+.threeline_boxleftone .leibie{width:100%; float: left; display: block; margin-top:3px; margin-left:12px; display:inline; line-height: 21px;}
+.threeline_boxleftone .lpssleft{float: left; width: 40px; font-weight: bold; }
+.threeline_boxleftone .lpssright{float: left; width: 860px;}
+.threeline_boxleftone .lpssright font{ font-weight: normal; font-size: 12px;}
+.threeline_boxleftone dd a:link{ color:#0041D9; text-decoration:none;}

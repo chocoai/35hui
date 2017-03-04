@@ -1,0 +1,11 @@
+#login {background-color: #F6F6F6;	border-bottom: 1px solid #D2D2D2;	height: 25px;	line-height: 25px;	text-align: center;	margin:0 auto;	width:100%;}
+#fileQueue {BORDER-BOTTOM: #e5e5e5 1px solid;	BORDER-LEFT: #e5e5e5 1px solid;	WIDTH: 400px;	MARGIN-BOTTOM: 10px;	HEIGHT: 300px;	OVERFLOW: auto;	BORDER-TOP: #e5e5e5 1px solid;	BORDER-RIGHT: #e5e5e5 1px solid;}
+#photoQueue {BORDER-BOTTOM: #e5e5e5 1px solid;	BORDER-LEFT: #e5e5e5 1px solid;	WIDTH: 400px;	MARGIN-BOTTOM: 10px;	HEIGHT: 300px;	OVERFLOW: auto;	BORDER-TOP: #e5e5e5 1px solid;	BORDER-RIGHT: #e5e5e5 1px solid;}
+#moiveQueue {BORDER-BOTTOM: #e5e5e5 1px solid;	BORDER-LEFT: #e5e5e5 1px solid;	WIDTH: 400px;	MARGIN-BOTTOM: 10px;	HEIGHT: 300px;	OVERFLOW: auto;	BORDER-TOP: #e5e5e5 1px solid;	BORDER-RIGHT: #e5e5e5 1px solid;}
+#ichnograph {BORDER-BOTTOM: #e5e5e5 1px solid;	BORDER-LEFT: #e5e5e5 1px solid;	WIDTH: 400px;	MARGIN-BOTTOM: 10px;	HEIGHT: 300px;	OVERFLOW: auto;	BORDER-TOP: #e5e5e5 1px solid;	BORDER-RIGHT: #e5e5e5 1px solid;}
+#outdoor {	BORDER-BOTTOM: #e5e5e5 1px solid;	BORDER-LEFT: #e5e5e5 1px solid;	WIDTH: 400px;	MARGIN-BOTTOM: 10px;	HEIGHT: 300px;	OVERFLOW: auto;	BORDER-TOP: #e5e5e5 1px solid;	BORDER-RIGHT: #e5e5e5 1px solid;}
+#indoor {BORDER-BOTTOM: #e5e5e5 1px solid;	BORDER-LEFT: #e5e5e5 1px solid;	WIDTH: 400px;	MARGIN-BOTTOM: 10px;	HEIGHT: 300px;	OVERFLOW: auto;	BORDER-TOP: #e5e5e5 1px solid;	BORDER-RIGHT: #e5e5e5 1px solid;}
+#outdoorvideo {	BORDER-BOTTOM: #e5e5e5 1px solid;	BORDER-LEFT: #e5e5e5 1px solid;	WIDTH: 400px;	MARGIN-BOTTOM: 10px;	HEIGHT: 300px;	OVERFLOW: auto;	BORDER-TOP: #e5e5e5 1px solid;	BORDER-RIGHT: #e5e5e5 1px solid;}
+#indoorvideo {	BORDER-BOTTOM: #e5e5e5 1px solid;	BORDER-LEFT: #e5e5e5 1px solid;	WIDTH: 400px;	MARGIN-BOTTOM: 10px;	HEIGHT: 300px;	OVERFLOW: auto;	BORDER-TOP: #e5e5e5 1px solid;	BORDER-RIGHT: #e5e5e5 1px solid;}
+/*--------added by mingfang 10-11-30----------*/
+.items span.empty {display: block;	margin-top:20px;}

@@ -1,0 +1,36 @@
+/********shop index*********/
+.qs_list LI { TEXT-ALIGN:left;  LINE-HEIGHT:24px; LIST-STYLE-TYPE:none; PADDING-LEFT:18px; DISPLAY:inline; BACKGROUND:url(../images/libg.gif) 0 -34px no-repeat scroll transparent;FLOAT:left; HEIGHT:24px; MARGIN-LEFT:10px; LIST-STYLE-IMAGE:none }
+.xtlp_xz { clear: both; float: left; width: 150px; }
+.banner { margin-bottom:10px; }
+.cz_title { background:url(../images/spbg.gif) no-repeat scroll 0 -200px transparent; color: #FFFFFF; float: right; font-size: 12px; font-weight: bold;height: 24px; line-height: 24px; margin-top: 8px; text-align: center; width: 61px; }
+.searchTool .btnSearch input {background:url(../images/spbg.gif) no-repeat scroll 4px -358px transparent; background:url(../images/spbg.gif) no-repeat scroll 10px -358px transparent\9;background:url(/images/spbg.gif) no-repeat scroll 8px -358px transparent\0;  _background:url(/images/spbg.gif) no-repeat scroll 10px -356px transparent;border: medium none;cursor: pointer;display: block; height: 31px; overflow: hidden; text-decoration: none; width: 65px;}
+.searchTool .txtSearch { border: 1px solid #CCCCCC; float: left; height: 24px; line-height: 24px; overflow: hidden; vertical-align: middle; width: 155px; }
+.w360{height: 315px; min-height: 275px;}
+.bzw_xx{margin-bottom: 15px;}
+.dcwz_list1{margin-bottom: 15px;}
+.dc_wz1{width: 175px; padding-right: 10px;}
+.cs_left{padding-bottom: 20px; _margin-bottom:20px;}
+.dcwz_list1{ padding-bottom: 0;}
+.zs4_list{margin-top:0;}
+.ulmargin23{margin: 10px;}
+.zs4_list{width:257px; overflow: hidden;}
+.qx_images { display: inline; float: left; height: 149px; margin-left: 15px; margin-top: 10px; padding-bottom: 25px; width: 241px; }
+.pp_images{width:108px;}
+.slider .current{background-color: #fedecb; border-left: 5px solid #da4901;padding-left: 0px}
+.slider,.slider li{border:1px solid #fdcfb5;}
+.xtlp_xzul li{height: 202px;}
+.partner{text-align: center;clear:both}
+.partner span{display: block;float: left;padding-left: 25px;width: 70px;}
+.partner ul{display: block;float: left;margin: 0px 0px 5px;padding: 0px;width: 860px;}
+.partner li{display: block;float: left;line-height: 1.6em;list-style-type: none;margin: 0px;padding: 0px;overflow: hidden;width: 85px;height: 20px}
+.partner li a{float: left;}
+.tag_zhu{background:url(../images/tag_type.gif) no-repeat scroll 0 -40px transparent; height: 16px; left: 85px; position: relative; margin-top: -16px; width: 16px;}
+.tag_sale { background: url("../images/tag_type.gif") no-repeat scroll 0 0 transparent; height: 16px; left: 85px; position: relative; margin-top: -16px; width: 16px;}
+
+
+.p_nav{ clear:both; height:37px; background:url(../images/pu_nav.gif) no-repeat; padding:0 10px; margin-top:5px;}
+.p_nav ul{ clear:both;}
+.p_nav ul li{ float:left; height:37px; margin-right:2px;}
+.p_nav ul li a{ padding:0 15px; line-height:37px; color:#FFFFFF; font-weight:bold; font-size:14px; text-decoration:none; display:block;}
+.p_nav ul li a:hover{  background:url(../images/pu_li.gif) repeat-x;}
+.p_nav ul li.clk{ background:url(../images/pu_li.gif) repeat-x;}

@@ -1,0 +1,154 @@
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, label, table, tbody, tr, td, img, div, dl, dt, dd, pre, input, select, textarea, fieldset, iframe, hr{ margin:0; padding:0;}
+body{color:#333; font-size:12px; line-height:normal; font-family:Arial, Helvetica, sans-serif; line-height: 20px; background:url(../images/background.jpg) repeat-x;}
+ul{ list-style-type:none;}
+a{color:#7F6228; text-decoration:none;}
+a:hover{text-decoration:underline;}
+em {font-style:normal;}
+table {border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+button{background:none; border:none; cursor:pointer;}
+ol,li{list-style-type:none;}
+*{margin:0px;padding:0px;}
+.show {display:block; }
+.hidden {display:none; }
+img{ border:0px;}
+.fixfloat{zoom:1}
+.red{ color:#ff2200;}
+.clear{ clear:both;}
+
+#wrapper {width:1000px; margin: 50px auto 0 auto; background-color:#FFFFFF;}
+#header {height:100px; background:url(../images/header.png) repeat-x; position: relative;}
+#logo {float:left; width: 290px; padding-left:15px; padding-top:20px;}
+#logo h1 { font-size:2.4em; font-weight: normal; font-family: 'Microsoft YaHei'; height: 35px; line-height: 35px; padding-left: 10px;}
+#top {float:right;text-align:right;width:640px; padding-top: 30px; position: absolute; right: 0; background:url(../images/radio.jpg) no-repeat 588px -8px;}
+#top ul{height:30px;clear:both; padding-top:5px;}
+#top ul li {float:left; height:30px; }
+#top ul li a {color:#808080;padding:0 13px; font-size: 16px; line-height: 30px; height: 30px;font-family: 'Microsoft YaHei'; }
+#top ul li a:hover {color:#999;}
+#top ul li a {color:#808080;padding:0 13px; font-size: 16px; line-height: 30px; height: 30px;font-family: 'Microsoft YaHei'; }
+#top .tc{ width: 85px; height: auto; background-color: #fff; text-align: left;}
+#top .tc p{ clear:both; height: 20px; padding:5px 0 5px 12px;}
+#top .tc p a{line-height:20px; font-size: 14px; font-weight: normal; height: 20px; padding: 0;}
+#search {float:right;clear:both;text-align:right;border-top:1px solid #ccc;padding:10px 0 0; height: 25px;}
+input.searchfield {width:255px;border:2px solid #ccc;font-size:.9em;padding:6px;}
+input.searchbutton {border:0;color:#fff;font-weight:700;font-size:.9em;background:gray;padding:6px;}
+#crumbs {clear:both; padding:5px; line-height:20px;}
+#crumbs h1{ background: url("../images/titbg.jpg") no-repeat scroll 0 5px transparent;
+    border-bottom: 1px dotted #CCCCCC;
+    clear: both;
+    color: #1C5334;
+    font-family: 'Microsoft YaHei';
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-bottom: 5px;
+    padding-left: 15px;}
+#crumbs a{ line-height:20px;}
+#content {padding:10px 10px 20px; overflow:hidden; zoom:1; background-color: #F8F7F8; clear: both;}
+#content p.subcat {margin-left:30px;}
+#main {width:720px;float:left;margin-bottom:30px;}
+#main2 {width:600px;float:left;margin-bottom:40px;}
+#main .alcont{ padding: 10px; overflow:hidden; zoom:1;}
+#main .alcont h1{ clear: both;font-family: 'Microsoft YaHei';  line-height: 30px; font-weight: bold; font-size: 18px; padding-bottom: 5px; background: url(../images/titbg.jpg) no-repeat 0 5px; border-bottom: 1px dotted #ccc; width: 690px; padding-left:15px;color:#1C5334; margin-bottom: 15px;}
+#main h2{ background: url("../images/titbg.jpg") no-repeat scroll 0 5px transparent; border-bottom: 1px dotted #CCCCCC; clear: both; color: #1C5334; font-family: 'Microsoft YaHei';  font-size: 18px;
+ font-weight: bold; line-height: 30px; margin-bottom: 15px; padding-bottom: 5px; padding-left: 15px; width: 690px;}
+#main h3{ clear: both; line-height: 30px; font-weight: bold; font-size: 12px;}
+#main .archive{ clear:both;}
+#main .archive p{ clear:both; line-height:25px;  border-bottom:1px dotted #FFC452; padding:3px 0;}
+#side {width:218px;float:right;}
+#side2 {width:340px;float:right;}
+.single {clear: both;}
+.single h3{clear: both;  font-weight: bold; font-size: 14px;}
+.single ul{}
+.single ul li{ clear: both; line-height: 25px;}
+#footer {clear:both;padding-top:10px; padding-bottom: 20px;border-top:2px solid #1C5334; overflow: hidden; zoom:1; background-color: #F8F7F8;}
+#footer .f_left{ float:left; width: 200px; line-height: 25px; padding-left: 5px;}
+#footer .f_right{ float: right; width: 600px; text-align: right; line-height: 25px;}
+#footer .f_right a{ line-height: 25px; padding:0 5px;}
+#footer .f_left a{ line-height: 25px; padding: 0 10px;}
+#main input[type=button] {border:1px solid #ccc;color:#000;font-size:.8em;line-height:1.5em;cursor:pointer;display:block;float:left;background:#f9f6f2;margin:0 .1em;padding:.2em .8em;}
+.strong {font-weight:700;}
+.em {font-style:italic;}
+.underline {text-decoration:underline;}
+.del {text-decoration:line-through;}
+fieldset {border:1px solid #E4DF94;color:#000;background:#FFFBC0;margin:0 0 8px;padding:10px 8px;}
+/* Patch #19 - 1.7.1 - new panel division */
+.adminpanel, .innerpanel { margin: 0 0 8px 0; color: #000; }
+.adminpanel { padding: 10px 8px 10px 15px; border: 1px solid #ccc; background: #FFFBC0; }
+.innerpanel { padding: 5px 8px 0px 8px; border: 1px solid #e0e0e0; background: #FFFBC0; }
+.admintitle { font: bold 14px Arial; color: #a62300; margin-left: 0px; margin-bottom: 8px; }
+.admintitle a { font-weight: normal; }
+.message { margin-bottom: 8px; }
+.warning, .message { text-align: center; color: #000; border: 1px solid #ccc; background: #FFFBC0; padding: 10px 8px 0px 8px; }
+.spacelink { margin: 0px 0px 6px 0px; }
+
+textarea {width:97%;padding:3px;}
+.comment {color:gray;border-top:1px solid #ccc;background:#F5F6F6;margin:0 0 10px;padding:10px;}
+.commentsbox {color:gray;margin:0 0 10px;padding:10px;}
+.date {margin:0 0 20px;}
+.clearer {clear:both;margin:0 auto;padding:1px 0 0;}
+/* for expandable title links on archive and sitemap pages */
+.drop_title a {font:bold 12px Arial;}
+.droplist_div {width:95%;border-bottom:1px solid #ccc;padding:4px 0;}
+.subcatlist_div {width:95%;padding:0 0 0 15px;}
+.txt_2 {border: 1px solid #82A9CD; color: #808080; float: left; height: 18px; line-height: 18px; margin-right: 5px; padding: 1px 0 1px 3px; width: 30px;}
+
+.navtit{ clear:both;}
+.navtit a{ padding:0 10px; line-height:25px;}
+.table_03 { width: 100%;}
+.table_03 td { border: 1px solid #E8E8E8; line-height: 25px; padding: 3px 0 3px 10px;}
+.table_03 td.title { border-top: 1px solid #CCCCCC; font-size: 14px; font-weight: bold;}
+.table_03 td.tit { background: none repeat scroll 0 0 #F7FBFE; color: #666666; font-weight: bold; padding-right: 10px; text-align: right;}
+.table_03 td.txt {}
+.ggpic{ clear:both; padding:5px 0;}
+.anli{ clear:both;}
+.anli .alpic{ float:left; width:280px; height:220px;}
+.anli .altxt{ float:right; width:442px;}
+.anli .altxt h4{ clear:both; height:28px;}
+.anli .altxt h4 a{ color:#7F6228; font-size:14px; line-height:28px;}
+.anli .altxt .alstyle{ clear:both; height:25px;}
+.anli .altxt .alcont{ clear:both; line-height:22px;}
+.al_01{ float:left; width:220px; height:23px; line-height:23px;}
+.wh-cont{ clear:both; background: url("../images/feat-bg.jpg") repeat-x; height:206px;}
+.wh-cont .whcont{ float:left; width:320px;background: url("../images/vert-border.png") no-repeat right; padding:45px 0 40px 10px;font-family: 'Microsoft YaHei'; }
+.wh-cont .whcont h6{ clear:both; font-size:16px; padding:10px 0 10px 20px; font-weight:bold; line-height:20px; margin-bottom:10px; color:#1C5334;}
+.wh-cont .whcont p{ clear:both; font-size:16px; padding:5px 0 5px 35px;line-height:20px;background: url("../images/list-item.png") no-repeat 22px 11px; font-size:12px;}
+
+/* Easy Slider */
+#slider ul, #slider li,#slider2 ul, #slider2 li{margin:0;	padding:0;	list-style:none;}
+#slider2{margin-top:1em;}
+#slider li, #slider2 li{width:980px;height:450px;	overflow:hidden;}
+#slider li  a img, #slider2 li a img{width:980px;height:450px;	}
+#prevBtn, #nextBtn,	#slider1next, #slider1prev{	display:block;	width:30px;	height:77px;position:absolute;	left:-30px;	top:71px;z-index:1000;	}
+#nextBtn, #slider1next{	left:696px;	}
+#prevBtn a, #nextBtn a,	#slider1next a, #slider1prev a{	display:block;	position:relative;	width:30px;	height:77px;background:url(../images/btn_prev.gif) no-repeat 0 0;}
+#nextBtn a, #slider1next a{	background:url(../images/btn_next.gif) no-repeat 0 0;}
+ol#controls{ margin-top:-50px; padding-left: 800px;	height:28px;}
+ol#controls li{	margin:0 10px 0 0;	padding:0;	float:left;	list-style:none;height:28px;line-height:28px;}
+ol#controls li a{	float:left;	height:28px;line-height:28px;border:1px solid #ccc;	background:#fff;color:#1C5334;padding:0 10px;text-decoration:none;	}
+ol#controls li.current a{background:#1C5334;color:#fff;	}
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+
+.cjmode{ padding:10px 0; float:left; width:360px; height:76px;}
+.cjmode .cjpic{ height:75px; width:125px; float:left;}
+.cjmode .cjpic img{ height:75px; width:125px;}
+.cjmode .cjtxt{ float:right; width:220px;font-family: 'Microsoft YaHei'; }
+.cjmode .cjtxt p{ clear: both; height: 25px; line-height: 25px; font-size: 14px;}
+
+.right_anpic{ padding-top: 12px; margin-bottom: 10px;}
+.right_antxt{ clear: both; padding: 5px;}
+.right_antxt p{ clear: both; padding: 5px; height:20px; line-height:20px; border-bottom: 1px dotted #ccc;}
+.right_antxt p a{ line-height:20px; font-size: 14px;}
+.rtmess{ clear: both; border-bottom: 1px dotted #ccc; overflow: hidden; zoom:1; margin-bottom: 10px; }
+.rtmess .dq{ float: left; height: 50px; padding: 5px 10px; font-size:24px; font-weight: bold; width: 25px; line-height: 25px; margin-bottom: 10px;font-family: 'Microsoft YaHei'; }
+.rtmess .txt{ float: left; margin-left: 10px; margin-bottom: 10px;}
+.rtmess .txt h5{ clear: both; height: 30px; font-size:16px; font-weight: bold; line-height: 30px; padding-top: 3px;}
+.rtmess .txt p{ clear: both; height: 25px; line-height: 25px;}
+.rtmess .txt p span{ padding-right: 30px; line-height: 25px;}
+
+.rtalpic{ float: left; width: 400px; height: 300px;}
+.rtalpic .bpic{ height:215px; clear: both; margin-bottom: 5px;}
+.rtalpic .psic{ height:65px; clear: both;}
+.rtalpic .psic .ppic{ width: 69px; height: 52px; padding: 9px 5px 2px 5px;  float: left;}
+.rtalpic .psic  .bg{  background:url(../images/sbg.jpg) no-repeat 3px 2px; }
+.rtaltxt{ float: right; width: 300px; padding-right: 10 px;}
